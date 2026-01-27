@@ -1,0 +1,10 @@
+MODEL_NAME: {{model_name}}
+
+REASON:
+{{reason}}
+
+CLAIM:
+{{claim}}
+
+DATA_CONDITIONS:
+{{data}}

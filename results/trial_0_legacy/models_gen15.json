@@ -1,0 +1,145 @@
+{
+  "generation": 15,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "Retaining Gen 14 best model (Fractional inverse power -1.25) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.2",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.3",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.1",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.4)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.4",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(d*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Simplification - removing one coefficient from tanh term (d*tanh(e*nut) -> tanh(d*nut))",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Simplification - removing coefficient inside tanh (d*tanh(e*nut) -> d*tanh(nut))",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Simplification - removing coefficient in exponential decay (exp(-f*x) -> exp(-x))",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Simplification - removing coefficient in radial term (1 + g*abs(r) -> 1 + abs(r))",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)^1.5))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Fractional radial power with best inverse power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*sqrt(r^2+h)))^(-1.25)",
+      "num_coeffs": 8,
+      "reason": "EP3: Smoothed absolute value with best inverse power",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Squared radial modulation with best inverse power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*log(1+abs(r))))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Log radial modulation with best inverse power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Replacing nut with k in best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*atan(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Arctan saturation with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*x)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding global streamwise decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Super-Gaussian base with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*tanh(f*nut) * exp(-g*x) * (1 + h*abs(r)))^(-1.25)",
+      "num_coeffs": 8,
+      "reason": "EP2: Bastankhah base with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*nut)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding global turbulence decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*k)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding k-term",
+      "ep_type": "EP2"
+    }
+  ]
+}

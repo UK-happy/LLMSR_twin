@@ -1,0 +1,185 @@
+{
+  "generation": 7,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Keeping the best model",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying as 1/x",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-2)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying as 1/x^2",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-e*x)) + d",
+      "num_coeffs": 5,
+      "reason": "Near-wake correction with constant offset",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-e*x^2)) + d",
+      "num_coeffs": 5,
+      "reason": "Smoother near-wake with constant offset",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*k)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying with TKE",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*sqrt(k))^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying with sqrt(k)",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * tanh(e*x)",
+      "num_coeffs": 5,
+      "reason": "Tanh offset",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * log(1 + e*x)",
+      "num_coeffs": 5,
+      "reason": "Logarithmic offset",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * sin(e*x)",
+      "num_coeffs": 5,
+      "reason": "Sinusoidal offset (testing periodicity)",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying radially",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*r^2)",
+      "num_coeffs": 5,
+      "reason": "Offset with Gaussian radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*abs(r))^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset with abs(r) decay",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^4)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset with quartic radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x + f*r^2)",
+      "num_coeffs": 6,
+      "reason": "Linear offset in x and r",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - exp(-e*x)) * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Near-wake offset with radial decay",
+      "ep_type": "EP3",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * tanh(b*x) * tanh(c*r)",
+      "num_coeffs": 3,
+      "reason": "Double tanh (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + x)^(-b) * (1 + r)^(-c) * (1 + k)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Triple power law (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r) * exp(-d*k)",
+      "num_coeffs": 4,
+      "reason": "Triple exponential (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Original best model without offset (Simplification)",
+      "ep_type": "EP4",
+      "parent_generation": 6,
+      "parent_id": 1
+    }
+  ]
+}

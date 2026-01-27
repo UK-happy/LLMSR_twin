@@ -1,0 +1,185 @@
+{
+  "generation": 11,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best model (Gen4-ID1) with linear TKE coupling",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x*nut)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best model with linear Nut coupling",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x*omega)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best model with linear Omega coupling",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + (b + c*k)*sqrt(x))^(-2) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Decay rate modulated by TKE",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + (b + c*nut)*sqrt(x))^(-2) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Decay rate modulated by Nut",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + (b + c*omega)*sqrt(x))^(-2) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Decay rate modulated by Omega",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + (c + d*k)*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Wake width modulated by TKE",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + (c + d*nut)*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Wake width modulated by Nut",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + (c + d*omega)*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Wake width modulated by Omega",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*k + e*x*omega)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen10-ID4 refinement with mixed physics",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * exp(d*x*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen10-ID4 with exp TKE coupling",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*k^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen10-ID4 with quadratic TKE",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen10-ID4 with sqrt TKE",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*nut^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen10-ID4 with quadratic Nut",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*sqrt(nut))",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen10-ID4 with sqrt Nut",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen10-ID4 with quadratic Omega",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 4
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen10-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen10-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 10,
+      "parent_id": 1
+    }
+  ]
+}

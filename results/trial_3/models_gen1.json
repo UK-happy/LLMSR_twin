@@ -1,0 +1,185 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Standard Gaussian wake model",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-b) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Power-law decay in x with Gaussian radial profile",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Rational decay function for both x and r",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * cos(c*r * pi/2)^2",
+      "num_coeffs": 3,
+      "reason": "Cosine-squared radial profile",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Gaussian with linear TKE dependence",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 6,
+      "formula": "a * x^(-b) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Power-law x-decay with sqrt(k) turbulence effect",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Gaussian with constant offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 - exp(-b*x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Near-wake growth term (1-exp) combined with Gaussian",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * (1 - tanh(c*r^2))",
+      "num_coeffs": 3,
+      "reason": "Tanh-based radial profile (similar to top-hat)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Gaussian scaled by eddy viscosity",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 11,
+      "formula": "a * x^(-b) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Quartic radial decay for flatter core",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*abs(r))",
+      "num_coeffs": 3,
+      "reason": "Exponential radial decay (sharper peak than Gaussian)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 13,
+      "formula": "a * (x + 1)^(-b) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Shifted power-law with specific dissipation rate effect",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x^2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Gaussian decay in both x and r",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Combined TKE and eddy viscosity effects",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-1/3) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Theoretical 1/3 power law decay for far wake",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) + e",
+      "num_coeffs": 5,
+      "reason": "Polynomial radial decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * x^(-b) * exp(-c*r^2) * (1 - exp(-d*x))",
+      "num_coeffs": 4,
+      "reason": "Power law with near-wake correction term",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*sqrt(k) + e*x)",
+      "num_coeffs": 5,
+      "reason": "Denominator scaling with x and TKE",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-c) * (1 + d*r^2)^(-e)",
+      "num_coeffs": 5,
+      "reason": "Generalized rational decay in x and r",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    }
+  ]
+}

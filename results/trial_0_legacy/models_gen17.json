@@ -1,0 +1,145 @@
+{
+  "generation": 17,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "Retaining Gen 16 best model for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(d*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing outer tanh coefficient to 1 (re-evaluating)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing inner tanh coefficient to 1 (re-evaluating)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing exponential decay rate to 1 (re-evaluating)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing radial modulation coefficient to 1 (re-evaluating)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.2 again",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.3 again",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + 0.5 * tanh(d*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing outer tanh coefficient to 0.5",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(0.1*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing inner tanh coefficient to 0.1 (scaling)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing exponential decay rate to 0.1 (slow decay)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + 0.1*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Fixing radial modulation coefficient to 0.1 (weak modulation)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Re-checking squared radial modulation (smoother)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*sqrt(r^2+0.01)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP3: Smoothed absolute value with fixed smoothing parameter",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*x)^(-1)",
+      "num_coeffs": 8,
+      "reason": "Retaining Gen 16 runner-up (Global decay added)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*nut)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding global turbulence decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*k)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding k-term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) + h",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding offset",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*x*r)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding coupled x-r decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*r^2)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding radial decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*x^2)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding quadratic global decay",
+      "ep_type": "EP2"
+    }
+  ]
+}

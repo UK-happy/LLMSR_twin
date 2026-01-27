@@ -1,0 +1,145 @@
+{
+  "generation": 5,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Gen 3 Champion: Fixed -2/3 power.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-0.6) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Fixed -0.6 power (Near -2/3).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-0.7) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Fixed -0.7 power (Near -2/3).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k*x)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Distance-weighted TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Inverse Eddy Viscosity.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 - d*tanh(e*r))",
+      "num_coeffs": 5,
+      "reason": "-2/3 power + Tanh radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * tanh(b/x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Tanh decay (saturates at 0 for large x).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * atan(b/x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Arctan decay.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x^0.5) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Stretched exponential decay.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*log(1+x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Log-domain exponential (equivalent to power law).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k^2)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Quadratic TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*nut^2)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Quadratic Eddy Viscosity.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Omega modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*omega*x)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Distance-weighted Omega.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Inverse TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*abs(r))",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Linear radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*r^4)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Quartic radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k*r)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Radial TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*nut*r)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Radial Eddy Viscosity.",
+      "ep_type": "EP2"
+    }
+  ]
+}

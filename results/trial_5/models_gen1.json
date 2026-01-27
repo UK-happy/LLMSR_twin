@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Classic Gaussian wake profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-b) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Power-law decay with Gaussian radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Jensen-like decay with polynomial radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * (1 - tanh(c*r^2))",
+      "num_coeffs": 3,
+      "reason": "Exponential decay with tanh radial cutoff",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * cos(c*r)^2",
+      "num_coeffs": 3,
+      "reason": "Cosine squared radial profile (approximate Gaussian)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*sqrt(x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Slower sqrt(x) decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-1.5) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Intermediate power law decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^4)",
+      "num_coeffs": 3,
+      "reason": "Super-Gaussian radial profile (flatter top)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-2)",
+      "num_coeffs": 3,
+      "reason": "Lorentzian-like radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * (1 + c*k) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gaussian with TKE dependence",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * (1 + c*nut) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gaussian with eddy viscosity dependence",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * (1 + c*omega) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gaussian with specific dissipation rate dependence",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * x^(-b) * (1 + c*r^2 + d*r^4)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Power law decay with higher order polynomial radial",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*abs(r))",
+      "num_coeffs": 3,
+      "reason": "Exponential radial decay (cusp at center)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Generalized power law decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Generalized polynomial radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Decay based on sqrt(x) expansion",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*x*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gaussian with x-r coupling term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-1) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Polynomial radial with TKE enhancement",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Simple inverse decay in both x and r",
+      "ep_type": "EP1"
+    }
+  ]
+}

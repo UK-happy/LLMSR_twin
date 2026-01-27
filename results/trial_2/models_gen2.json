@@ -1,0 +1,145 @@
+{
+  "generation": 2,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Adding linear TKE modulation to the best Gen 1 model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Adding sqrt TKE modulation to the best Gen 1 model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Adding eddy viscosity modulation to the best Gen 1 model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Adding omega modulation to the best Gen 1 model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-0.7) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Slightly adjusting the decay power from -2/3 to -0.7.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-0.6) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Slightly adjusting the decay power from -2/3 to -0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE modulation on the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Inverse sqrt TKE modulation on the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k^2)",
+      "num_coeffs": 4,
+      "reason": "Quadratic TKE modulation on the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*x*k)",
+      "num_coeffs": 4,
+      "reason": "Distance-dependent TKE modulation on the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*abs(r)^1.8)",
+      "num_coeffs": 3,
+      "reason": "Modifying radial profile to be slightly super-Gaussian.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 - exp(-d*x))",
+      "num_coeffs": 4,
+      "reason": "Enforcing near-wake behavior (zero at x=0) explicitly.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*abs(r))",
+      "num_coeffs": 4,
+      "reason": "Ensuring radial symmetry with an additional linear term.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Using polynomial radial decay instead of exponential to prevent rapid drop-off.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 15,
+      "formula": "a * x^(-2/3) * exp(-c*r^2)",
+      "num_coeffs": 2,
+      "reason": "Simplifying the best model by removing the offset in x.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + x)^(-2/3) * exp(-b*r^2)",
+      "num_coeffs": 2,
+      "reason": "Simplifying by fixing the x-scale coefficient to 1.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 17,
+      "formula": "a * tanh(b/x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Using tanh for decay instead of power law.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * besselj0(c*r)",
+      "num_coeffs": 3,
+      "reason": "Using Bessel function for radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * log(1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Logarithmic TKE interaction with free power law.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-c) * (1 + d*r^2 + e*r^4)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Rational function radial profile with free power law decay.",
+      "ep_type": "EP1"
+    }
+  ]
+}

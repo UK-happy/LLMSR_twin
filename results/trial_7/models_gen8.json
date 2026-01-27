@@ -1,0 +1,181 @@
+{
+  "generation": 8,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Re-evaluating Gen 3 ID 1 (Best so far) with fresh optimization",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (cos(c*r) + 1) * exp(-d*r^2) * (1 + e*x*omega)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved Gen 7 ID 3 (Cosine stabilized) with Omega term",
+      "ep_type": "EP2",
+      "parent_generation": 7,
+      "parent_id": 3
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (cos(c*r) + 1) * exp(-d*r^2) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved Gen 7 ID 3 with Nut term",
+      "ep_type": "EP2",
+      "parent_generation": 7,
+      "parent_id": 3
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP1: Super-Gaussian radial profile with Omega/Nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-2) * (1 + d*x*omega) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP1: Rational radial profile (power -2) with Omega/Nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * x^(-0.5) * (1 + b*r^2)^(-1) * (1 + c*nut) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved Gen 7 ID 6 (Larsen+Nut) with TKE",
+      "ep_type": "EP2",
+      "parent_generation": 7,
+      "parent_id": 6
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*r^2*x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with coupled r-x term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*nut*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with nut*k interaction",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (cos(c*r) + 1) * exp(-d*r^2) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved Gen 7 ID 3 with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 7,
+      "parent_id": 3
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x^(-0.5))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with inverse sqrt(x)",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x^(-1))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with inverse x term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*log(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with log(x) term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*exp(-x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with exponential decay",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*exp(-r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with exponential radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with x*omega term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*nut)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with x*nut term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with x*k term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*sqrt(r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with sqrt(r) term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*r^4)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with super-Gaussian radial term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*tanh(h*r))",
+      "num_coeffs": 8,
+      "reason": "EP2: Improved Gen 3 ID 1 with tanh radial modulation",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    }
+  ]
+}

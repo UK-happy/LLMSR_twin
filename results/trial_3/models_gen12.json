@@ -1,0 +1,185 @@
+{
+  "generation": 12,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Re-introducing Gen 10 Champion (Retry)",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 - tanh(c*r^2)) + d",
+      "num_coeffs": 4,
+      "reason": "Refining Gen 11 best new structure (Tanh radial)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 3
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 - tanh(c*r^2))^2 + d",
+      "num_coeffs": 4,
+      "reason": "Squared Tanh radial profile with offset",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 3
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 - tanh(c*r^4)) + d",
+      "num_coeffs": 4,
+      "reason": "Quartic Tanh radial profile with offset",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 3
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*sqrt(k)) + d",
+      "num_coeffs": 5,
+      "reason": "Refining Sqrt(k) model (Gen 11 ID 4)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + e*r^4)^(-1) + d",
+      "num_coeffs": 5,
+      "reason": "Refining Higher-order radial polynomial (Gen 11 ID 5)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 5
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k) + d",
+      "num_coeffs": 5,
+      "reason": "Refining TKE model (Gen 11 ID 6)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 6
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Refining Gaussian model (Gen 11 ID 7)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 7
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.001)",
+      "num_coeffs": 5,
+      "reason": "Slow decay offset (Physics) - Retry",
+      "ep_type": "EP3",
+      "parent_generation": 11,
+      "parent_id": 8
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.001)",
+      "num_coeffs": 5,
+      "reason": "Slow exponential decay offset (Physics) - Retry",
+      "ep_type": "EP3",
+      "parent_generation": 11,
+      "parent_id": 12
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r))^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Abs(r) radial decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-0.5) + d",
+      "num_coeffs": 4,
+      "reason": "Sqrt radial decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-2) + d",
+      "num_coeffs": 4,
+      "reason": "Squared rational radial decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Slower x-decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-3) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Faster x-decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 16,
+      "formula": "a * log(1 + b*x)^(-1) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Logarithmic x-decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r) + d",
+      "num_coeffs": 4,
+      "reason": "Exponential r-decay with offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying as 1/x^2 (faster physics decay)",
+      "ep_type": "EP3",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Offset decaying radially",
+      "ep_type": "EP3",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Control: No offset",
+      "ep_type": "EP4",
+      "parent_generation": 11,
+      "parent_id": 1
+    }
+  ]
+}

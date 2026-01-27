@@ -1,0 +1,145 @@
+{
+  "generation": 11,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2)",
+      "num_coeffs": 6,
+      "reason": "Retaining Gen 10 best model (Squared inverse with exponential decay) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Checking linear inverse with exponential decay (comparison)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-3)",
+      "num_coeffs": 6,
+      "reason": "EP2: Cubic inverse with exponential decay (stronger suppression)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x^2))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Gaussian-like downstream decay of turbulence effect",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*sqrt(x)))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Stretched exponential decay of turbulence effect",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Combining exponential decay with radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Linear inverse with combined decay and radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * exp(-f*x))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Replacing nut with k in the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*x) * exp(-g*x))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Mixed polynomial-exponential decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + e*nut) * exp(-f*x))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Log saturation with exponential decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*atan(e*nut) * exp(-f*x))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Arctan saturation with exponential decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut * exp(-f*x)))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP3: Decay inside tanh argument with squared inverse",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-1.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Fractional inverse power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) + g*r^2)^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Additive radial term in squared denominator",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2) * (1 + g*r^2)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Multiplicative radial decay term outside the squared term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2) * (1 + g*x)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Additional global streamwise decay",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Super-Gaussian base with best turbulence structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*tanh(f*nut) * exp(-g*x))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Bastankhah base with best turbulence structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) + g*k)^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Adding k-term to the decaying nut term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Higher fractional inverse power",
+      "ep_type": "EP2"
+    }
+  ]
+}

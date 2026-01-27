@@ -1,0 +1,185 @@
+{
+  "generation": 19,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 1",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 2",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 3",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 4",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 5",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + 10*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Forced x-scale 10",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + 50*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Forced x-scale 50",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + 100*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Forced x-scale 100",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + 10*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Forced r-scale 10",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + 50*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Forced r-scale 50",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + 100*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Forced r-scale 100",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + 0.0",
+      "num_coeffs": 3,
+      "reason": "Forced zero offset (Control)",
+      "ep_type": "EP4",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + 0.1",
+      "num_coeffs": 3,
+      "reason": "Forced 0.1 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) - 0.1",
+      "num_coeffs": 3,
+      "reason": "Forced -0.1 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + 0.01",
+      "num_coeffs": 3,
+      "reason": "Forced 0.01 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) - 0.01",
+      "num_coeffs": 3,
+      "reason": "Forced -0.01 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + 0.001",
+      "num_coeffs": 3,
+      "reason": "Forced 0.001 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) - 0.001",
+      "num_coeffs": 3,
+      "reason": "Forced -0.001 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + 0.0001",
+      "num_coeffs": 3,
+      "reason": "Forced 0.0001 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) - 0.0001",
+      "num_coeffs": 3,
+      "reason": "Forced -0.0001 offset",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    }
+  ]
+}

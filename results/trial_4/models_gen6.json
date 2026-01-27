@@ -1,0 +1,159 @@
+{
+  "generation": 6,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen5-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best model + TKE",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*nut)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best model + Nut",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Generalized rational power law",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x^c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Stretched exponential decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "EP1: Generalized rational radial decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r)^d)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: Generalized absolute radial power",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + d*r^4 + e*r^6)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP1: High order radial polynomial",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*x*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Explicit x-r coupling term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*x))",
+      "num_coeffs": 4,
+      "reason": "EP1: Expanding wake width (width ~ 1+dx)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*sqrt(x)))",
+      "num_coeffs": 4,
+      "reason": "EP1: Expanding wake width (width ~ 1+d*sqrt(x))",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * k^b * x^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Power law dependence on TKE",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * nut^b * x^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Power law dependence on Nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * omega^b * x^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Power law dependence on Omega",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k*x)",
+      "num_coeffs": 4,
+      "reason": "EP1: TKE-x coupled term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut*x)",
+      "num_coeffs": 4,
+      "reason": "EP1: Nut-x coupled term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen5-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen5-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 5,
+      "parent_id": 1
+    }
+  ]
+}

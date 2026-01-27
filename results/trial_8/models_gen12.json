@@ -1,0 +1,185 @@
+{
+    "generation": 12,
+    "models": [
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Elitism",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 1,
+            "parent_id": 14,
+            "reason": "Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Mutation",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 2,
+            "parent_id": 14,
+            "reason": "Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Expansion",
+            "formula": "a * x^(-1) * exp(-b*r^2) * (1 + d*nut)",
+            "id": 3,
+            "parent_id": 14,
+            "reason": "Added nut term to improve turbulence consistency (P4)."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Elitism",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 4,
+            "parent_id": 4,
+            "reason": "Retaining high performance model: Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Mutation",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 5,
+            "parent_id": 4,
+            "reason": "Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Expansion",
+            "formula": "a * x^(-1) * exp(-b*r^2) * (1 + d*nut)",
+            "id": 6,
+            "parent_id": 4,
+            "reason": "Added nut term to improve turbulence consistency (P4)."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Elitism",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 7,
+            "parent_id": 2,
+            "reason": "Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Mutation",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 8,
+            "parent_id": 2,
+            "reason": "Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Expansion",
+            "formula": "a * x^(-1) * exp(-b*r^2) * (1 + d*nut)",
+            "id": 9,
+            "parent_id": 2,
+            "reason": "Added nut term to improve turbulence consistency (P4)."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Elitism",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 10,
+            "parent_id": 13,
+            "reason": "Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Mutation",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 11,
+            "parent_id": 13,
+            "reason": "Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Expansion",
+            "formula": "a * x^(-1) * exp(-b*r^2) * (1 + d*nut)",
+            "id": 12,
+            "parent_id": 13,
+            "reason": "Added nut term to improve turbulence consistency (P4)."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Elitism",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 13,
+            "parent_id": 11,
+            "reason": "Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 2,
+            "parent_generation": 11,
+            "ep_type": "Mutation",
+            "formula": "a * x^(-1) * exp(-b*r^2)",
+            "id": 14,
+            "parent_id": 11,
+            "reason": "Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Expansion",
+            "formula": "a * x^(-1) * exp(-b*r^2) * (1 + d*nut)",
+            "id": 15,
+            "parent_id": 11,
+            "reason": "Added nut term to improve turbulence consistency (P4)."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Random",
+            "formula": "a * exp(-b*x) * exp(-c*r^2)",
+            "id": 16,
+            "parent_id": null,
+            "reason": "Exploring new structure to escape local optima. P1/P2 focus."
+        },
+        {
+            "num_coeffs": 3,
+            "parent_generation": 11,
+            "ep_type": "Random",
+            "formula": "a * x^(-b) * (1 + c*r^2)^(-1)",
+            "id": 17,
+            "parent_id": null,
+            "reason": "Exploring new structure to escape local optima. P1/P2 focus."
+        },
+        {
+            "num_coeffs": 4,
+            "parent_generation": 11,
+            "ep_type": "Random",
+            "formula": "a * x^(-1/3) * exp(-b*r^2) * (1 + c*nut)",
+            "id": 18,
+            "parent_id": null,
+            "reason": "Exploring new structure to escape local optima. P1/P2 focus."
+        },
+        {
+            "num_coeffs": 4,
+            "parent_generation": 11,
+            "ep_type": "Random",
+            "formula": "a * x^(-1/3) * exp(-b*r^2) * (1 + c*nut)",
+            "id": 19,
+            "parent_id": null,
+            "reason": "Exploring new structure to escape local optima. P1/P2 focus."
+        },
+        {
+            "num_coeffs": 4,
+            "parent_generation": 11,
+            "ep_type": "Random",
+            "formula": "a * x^(-1/3) * exp(-b*r^2) * (1 + c*nut)",
+            "id": 20,
+            "parent_id": null,
+            "reason": "Exploring new structure to escape local optima. P1/P2 focus."
+        }
+    ]
+}

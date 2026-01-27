@@ -1,0 +1,181 @@
+{
+  "generation": 2,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Best model from Gen 1 (ID 20). Preserved.",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x))",
+      "num_coeffs": 4,
+      "reason": "Gen 1 Best (ID 20) extension: added sqrt(x) correction.",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1) * (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "Gen 1 Best (ID 20) extension: added linear x correction.",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1) * (1 + d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gen 1 Best (ID 20) extension: added radial correction.",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gen 1 Best (ID 20) extension: added Gaussian radial decay.",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * exp(-c*r^2) * (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "Gen 1 2nd Best (ID 17) extension.",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 17
+    },
+    {
+      "id": 7,
+      "formula": "0.5 * (a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)) + 0.5 * (d * (1 + e*sqrt(x))^(-2) * exp(-f*r^2))",
+      "num_coeffs": 6,
+      "reason": "Ensemble of ID 20 and ID 17.",
+      "ep_type": "EP9",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 8,
+      "formula": "0.8 * (a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)) + 0.2 * (d * (1 + e*k))",
+      "num_coeffs": 5,
+      "reason": "Ensemble with TKE.",
+      "ep_type": "EP9",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x^0.8) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "New structure: x^0.8 decay.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x + c*x^2)^(-0.5) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "New structure: quadratic rational decay.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-1) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Crossover: ID 20 decay + ID 17 radial.",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Crossover: ID 17 decay + ID 20 radial.",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 17
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-2)",
+      "num_coeffs": 3,
+      "reason": "Mutation: ID 20 radial power -1 -> -2.",
+      "ep_type": "EP10",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*abs(r))^(-1)",
+      "num_coeffs": 3,
+      "reason": "Mutation: ID 20 radial r^2 -> abs(r).",
+      "ep_type": "EP10",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Physics check.",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Physics check.",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 17,
+      "formula": "a * x^(-1) * r^(-2)",
+      "num_coeffs": 1,
+      "reason": "Simplification.",
+      "ep_type": "EP4",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 18,
+      "formula": "a * (x/b)^(-2/3) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Dimensional analysis.",
+      "ep_type": "EP7",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 19,
+      "formula": "a * (x/b)^(-1/3) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Dimensional analysis.",
+      "ep_type": "EP7",
+      "parent_generation": 1,
+      "parent_id": 20
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Boundary check.",
+      "ep_type": "EP8",
+      "parent_generation": 1,
+      "parent_id": 20
+    }
+  ]
+}

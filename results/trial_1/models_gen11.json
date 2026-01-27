@@ -1,0 +1,145 @@
+{
+  "generation": 11,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion: Product form (Re-run).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "Gen 10 Best: Sum form.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Sum form with Linear Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*nut))",
+      "num_coeffs": 5,
+      "reason": "Product form with Linear Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.55 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "Sum form with TKE^0.55.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.65 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "Sum form with TKE^0.65.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Sum form with TKE^0.6 and TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "Sum form with TKE^0.6 and TKE^2.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 * (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "Distance-enhanced TKE^0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 * exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Decaying TKE^0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*abs(r))",
+      "num_coeffs": 5,
+      "reason": "Sum form + Linear radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "Sum form + Quadratic radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*r^4)",
+      "num_coeffs": 5,
+      "reason": "Sum form + Quartic radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6) * (1 - e*tanh(r))",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Tanh radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6) * (1 - e*r^2)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Polynomial radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^2)",
+      "num_coeffs": 5,
+      "reason": "Sum form + Quadratic Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.5 + f*x)",
+      "num_coeffs": 6,
+      "reason": "Sum form + x term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.5 + f*r)",
+      "num_coeffs": 6,
+      "reason": "Sum form + r term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.5 + f*k)",
+      "num_coeffs": 6,
+      "reason": "Sum form + TKE term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.5)^2",
+      "num_coeffs": 5,
+      "reason": "Squared sum form.",
+      "ep_type": "EP2"
+    }
+  ]
+}

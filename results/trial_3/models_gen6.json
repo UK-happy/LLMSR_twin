@@ -1,0 +1,185 @@
+{
+  "generation": 6,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Keeping the best model",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d + e*k",
+      "num_coeffs": 5,
+      "reason": "Offset with linear TKE term (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d + e*sqrt(k)",
+      "num_coeffs": 5,
+      "reason": "Offset with sqrt(k) term (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k) + d",
+      "num_coeffs": 5,
+      "reason": "Multiplicative TKE with offset",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*sqrt(k)) + d",
+      "num_coeffs": 5,
+      "reason": "Multiplicative sqrt(k) with offset",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)",
+      "num_coeffs": 5,
+      "reason": "Linearly growing offset",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x)",
+      "num_coeffs": 5,
+      "reason": "Decaying offset",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Growing offset (near-wake)",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "Offset with radial dependence",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)",
+      "num_coeffs": 5,
+      "reason": "Offset with quadratic x dependence",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * k",
+      "num_coeffs": 4,
+      "reason": "Offset proportional to k",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * sqrt(k)",
+      "num_coeffs": 4,
+      "reason": "Offset proportional to sqrt(k)",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * nut",
+      "num_coeffs": 4,
+      "reason": "Offset proportional to nut",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * omega",
+      "num_coeffs": 4,
+      "reason": "Offset proportional to omega",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Offset with eddy viscosity scaling",
+      "ep_type": "EP2",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * abs(x)",
+      "num_coeffs": 4,
+      "reason": "Offset with abs(x) (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 5,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * cos(b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Cosine x decay (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + x^2)^(-b) * (1 + r^2)^(-c)",
+      "num_coeffs": 3,
+      "reason": "Quadratic rational decay (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*sqrt(x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Stretched exponential decay (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Original best model without offset (Simplification)",
+      "ep_type": "EP4",
+      "parent_generation": 5,
+      "parent_id": 1
+    }
+  ]
+}

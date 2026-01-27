@@ -1,0 +1,12 @@
+TASK:
+Based on the model and the extracted logic below, perform ONLY Step 3 (General validity check) and Step 4 (Wake-model physical validity).
+Do NOT repeat the previous analysis.
+Start your response directly with "Step 3:".
+
+---
+MODEL_NAME: {{model_name}}
+REASON: {{reason}}
+
+---
+Logic Analysis:
+{{step1_result}}

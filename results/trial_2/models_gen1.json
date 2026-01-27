@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Classic Gaussian wake profile as a baseline.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Power-law decay with polynomial radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Theoretical far-wake decay rate (-2/3) with Gaussian profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * cos(c*r * pi / 2)",
+      "num_coeffs": 3,
+      "reason": "Cosine radial profile for smooth peak and boundary.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated by linear TKE term.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated by square root of TKE.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated by eddy viscosity.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated by specific dissipation rate.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "Power-law decay with Gaussian profile and quadratic TKE modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * (1 - tanh(c*r^2))",
+      "num_coeffs": 3,
+      "reason": "Tanh-based radial profile for sharper wake boundary.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*abs(r)^1.5)",
+      "num_coeffs": 3,
+      "reason": "Super-Gaussian radial profile (power 1.5).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^4)",
+      "num_coeffs": 3,
+      "reason": "Super-Gaussian radial profile (power 4) for flat-top wake.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Simple inverse decay in both x and r.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*x*k)",
+      "num_coeffs": 4,
+      "reason": "Gaussian with x-dependent TKE modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + k))",
+      "num_coeffs": 4,
+      "reason": "Gaussian with logarithmic TKE modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Combined modulation by TKE and eddy viscosity.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k / (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "TKE modulation that decays with distance.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sqrt(omega))",
+      "num_coeffs": 4,
+      "reason": "Gaussian with square root omega modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "Polynomial TKE modulation (linear + quadratic).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-0.5) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Slow power-law decay (-0.5) with TKE modulation.",
+      "ep_type": "EP1"
+    }
+  ]
+}

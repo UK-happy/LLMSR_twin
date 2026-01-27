@@ -1,0 +1,177 @@
+{
+  "generation": 2,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP2: Variant of Gen1-ID11 with rational radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x^0.5)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP2: Gen1-ID11 re-evaluation",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP2: Gen1-ID11 with higher decay power",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen1-ID11 with polynomial radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x + c*x^2)^(-1) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen1-ID15 with exponential radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 15
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x + c*x^1.5)^(-1) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen1-ID15 with x^1.5 term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 15
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2.2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP2: Gen1-ID2 with adjusted x power",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 2
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1.2)",
+      "num_coeffs": 3,
+      "reason": "EP2: Gen1-ID2 with adjusted r power",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 2
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r)^1.5)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP2: Gen1-ID2 with abs(r)^1.5",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 2
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x) + c*x)^(-2) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen1-ID11 with mixed x terms",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen1-ID11 with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen1-ID2 with Eddy Viscosity term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 2
+    },
+    {
+      "id": 13,
+      "formula": "a * log(1 + b/x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP1: Logarithmic decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 - exp(-b/x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP1: Inverse exponential decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * x^(-b) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP1: Power law x, Quartic r",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * cos(c*r) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Cosine modulated Gaussian",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gen1-ID2 re-check",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 2
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-3) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Faster decay x^-3",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 2
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x^2)^(-1) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen1-ID15 (remove linear x)",
+      "ep_type": "EP4",
+      "parent_generation": 1,
+      "parent_id": 15
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen1-ID5 (Double to Single Gaussian)",
+      "ep_type": "EP4",
+      "parent_generation": 1,
+      "parent_id": 5
+    }
+  ]
+}

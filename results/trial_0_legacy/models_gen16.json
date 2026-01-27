@@ -1,0 +1,145 @@
+{
+  "generation": 16,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "Retaining best structure (Gen 14/15) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(d*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing coefficient d outside tanh",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing coefficient e inside tanh",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing coefficient f in exponential decay",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing coefficient g in radial modulation",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(nut) * exp(-d*x) * (1 + e*abs(r)))^(-1.25)",
+      "num_coeffs": 5,
+      "reason": "EP4: Removing both tanh coefficients",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP4: Simplifying inverse power to integer -1",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP4: Simplifying inverse power to integer -2",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 9,
+      "formula": "exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing amplitude coefficient 'a' (assuming normalized)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP4: Replacing abs(r) with r^2 (smoother, simpler derivative)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing radial modulation entirely (checking if essential)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing exponential decay (checking if essential)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*nut * exp(-e*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "EP4: Removing tanh saturation (checking if linear nut is enough)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(d*nut) * exp(-x) * (1 + abs(r)))^(-1.25)",
+      "num_coeffs": 4,
+      "reason": "EP4: Aggressive simplification (removing multiple coefficients)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP4: Simplifying inverse power to -1.5 (half-integer)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*x)^(-1)",
+      "num_coeffs": 8,
+      "reason": "Retaining Gen 15 best model (Global decay added) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(d*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25) * (1 + g*x)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP4: Simplifying Gen 15 best model",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*sqrt(r^2+0.01)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP3: Fixed small constant in sqrt smoothing",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.33)",
+      "num_coeffs": 7,
+      "reason": "EP4: Checking power -4/3",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) + h",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding background offset (checking for non-zero far wake)",
+      "ep_type": "EP2"
+    }
+  ]
+}

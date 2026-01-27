@@ -1,0 +1,145 @@
+{
+  "generation": 12,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Gen 11 Champion: TKE^0.6 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^0.8)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + TKE^0.8.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.2)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + TKE^1.2.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^0.4)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + TKE^0.4.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Sqrt(Nut) (Consistency check).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Fixed -0.65 power + TKE^0.6 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-0.62) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Fixed -0.62 power + TKE^0.6 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^2)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Nut^2 (Gen 11 #3).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^1.5)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Nut^1.5.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^2.5)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Nut^2.5.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k*nut)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Interaction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(k*nut))",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Sqrt(Interaction).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*x*k)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Distance-weighted TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*r*k)",
+      "num_coeffs": 5,
+      "reason": "TKE^0.6 + Radial-weighted TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2 + f*nut)",
+      "num_coeffs": 6,
+      "reason": "TKE^0.6 + TKE^2 + Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2 + f*sqrt(nut))",
+      "num_coeffs": 6,
+      "reason": "TKE^0.6 + TKE^2 + Sqrt(Nut).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2 + f*r^2)",
+      "num_coeffs": 6,
+      "reason": "TKE^0.6 + TKE^2 + Radial.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k^0.6 + e*k)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Explicit inverse sum form.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6) / (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Nested division TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6) / (1 + e*k^0.4)",
+      "num_coeffs": 5,
+      "reason": "Nested division TKE powers.",
+      "ep_type": "EP2"
+    }
+  ]
+}

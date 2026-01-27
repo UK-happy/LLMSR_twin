@@ -1,0 +1,38 @@
+[
+  {
+    "id": "trial_3_best",
+    "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+    "score": 0.000116,
+    "description": "Trial 3 Best: Rational decay with offset"
+  },
+  {
+    "id": "trial_4_best",
+    "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x)",
+    "score": 0.000455,
+    "description": "Trial 4 Best: Sqrt(x) decay with polynomial radial"
+  },
+  {
+    "id": "trial_5_best",
+    "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-2) * (1 + d*sqrt(x))",
+    "score": 0.000382,
+    "description": "Trial 5 Best: Sqrt(x) decay with higher order radial"
+  },
+  {
+    "id": "trial_2_best",
+    "formula": "x^(-0.596) * exp(-a*r^2) / (1 + b*k^0.9505) * (1 - exp(-x))",
+    "score": 0.000329,
+    "description": "Trial 2 Best: Physics-informed with TKE and near-wake correction"
+  },
+  {
+    "id": "trial_6_best",
+    "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d * (1 + e*x^2)^(-1))",
+    "score": 0.000500,
+    "description": "Trial 6 Best: Balanced rational decay with near-wake correction"
+  },
+  {
+    "id": "trial_7_best",
+    "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+    "score": 0.000649,
+    "description": "Trial 7 Best: Super-Gaussian (r^4) with TKE/Nut/Omega"
+  }
+]

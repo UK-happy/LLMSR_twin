@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Classic Gaussian wake profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Rational decay in x and r (Jensen-like)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Power law decay in x",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * (1 + cos(c*r))",
+      "num_coeffs": 3,
+      "reason": "Cosine radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * (exp(-c*r^2) + d*exp(-e*r^2))",
+      "num_coeffs": 5,
+      "reason": "Double Gaussian for near/far wake mix",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * k * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Linear dependence on TKE (k)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * nut * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Linear dependence on Eddy Viscosity (nut)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * omega * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Linear dependence on Omega",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (exp(-b*x) + x^(-c)) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Mixed exponential and power law decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*r^4)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Higher order radial polynomial denominator",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Sqrt(x) decay rate",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * (1 - tanh(c*r^2))",
+      "num_coeffs": 3,
+      "reason": "Tanh radial profile (bell shape)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x*k) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Decay rate modulated by TKE",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x/nut) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Decay rate scaled by Eddy Viscosity",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x + c*x^2)^(-1) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Quadratic rational decay in x",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * sqrt(k) * x^(-b) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Sqrt(k) scaling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * nut^(b) * x^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Power law dependence on nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-2)",
+      "num_coeffs": 3,
+      "reason": "Exponential x, Rational r^2",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Rational x, Exponential r^2",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * k * (1 + b*r^2)^(-1)",
+      "num_coeffs": 2,
+      "reason": "Pure TKE driven model (no explicit x)",
+      "ep_type": "EP1"
+    }
+  ]
+}

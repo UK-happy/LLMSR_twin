@@ -1,0 +1,185 @@
+{
+  "generation": 3,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved ID 5 (Omega+Nut) with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * x^(-0.5)",
+      "num_coeffs": 5,
+      "reason": "EP6: Crossover of ID 5 (Omega+Nut) and ID 16 (Larsen decay)",
+      "ep_type": "EP6",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.66)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 16 with theoretical -2/3 exponent",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 16
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.5) * (1 + e*r^4)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 16 with super-Gaussian radial term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 16
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x*nut)^(-2) * (1 + c*r^2)^(-1) * x^(-0.5)",
+      "num_coeffs": 3,
+      "reason": "EP6: Crossover of ID 18 (Rational radial) and ID 16 (Larsen decay)",
+      "ep_type": "EP6",
+      "parent_generation": 2,
+      "parent_id": 18
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*x*nut) * x^(-0.5)",
+      "num_coeffs": 4,
+      "reason": "EP6: Crossover of ID 12 (Gaussian+Nut) and ID 16 (Larsen decay)",
+      "ep_type": "EP6",
+      "parent_generation": 2,
+      "parent_id": 12
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * exp(-f*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved ID 5 with exponential decay",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 5 with decaying nut effect",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x*nut)^(-2) * (1 + c*r^2)^(-1) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 18 with Omega term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 18
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*cos(g*r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved ID 5 with cosine modulation",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.5) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP9: Ensemble of ID 16 and ID 5",
+      "ep_type": "EP9",
+      "parent_generation": 2,
+      "parent_id": 16
+    },
+    {
+      "id": 12,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*nut) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved Gen 1 ID 11 with Nut and Omega",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved ID 5 with near-wake correction",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.5) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 16 with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 16
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x*nut)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 18 with linear x correction",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 18
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * tanh(f*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved ID 5 with tanh transition",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.5) * (1 + e*r^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 16 with extra radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 16
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved ID 5 with linear x term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 5
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x*nut)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k/x)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 18 with decaying TKE",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 18
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.5) * (1 + e*nut/x)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 16 with decaying nut effect",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 16
+    }
+  ]
+}

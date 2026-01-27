@@ -1,0 +1,145 @@
+{
+  "generation": 6,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Gen 5 Champion: Inverse sqrt(TKE) modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k)^(-0.5)",
+      "num_coeffs": 4,
+      "reason": "Alternative form of inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Inverse linear TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^2)",
+      "num_coeffs": 4,
+      "reason": "Inverse quadratic TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*sqrt(k))^(-1)",
+      "num_coeffs": 4,
+      "reason": "Explicit inverse power notation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Inverse Eddy Viscosity (Gen 5 #10 was good too).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Inverse Omega modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Combined Inverse TKE and Eddy Viscosity.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-0.6) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Fixed -0.6 power + Inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-0.7) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Fixed -0.7 power + Inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) / (1 + e*sqrt(k))",
+      "num_coeffs": 5,
+      "reason": "Free power + Inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k)^(-e)",
+      "num_coeffs": 5,
+      "reason": "Generalized inverse TKE power.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * exp(-d*k)",
+      "num_coeffs": 4,
+      "reason": "Exponential TKE decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * exp(-d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Exponential sqrt(TKE) decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k*x)",
+      "num_coeffs": 4,
+      "reason": "Distance-weighted inverse TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k)*x)",
+      "num_coeffs": 4,
+      "reason": "Distance-weighted inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*r^2) / (1 + e*sqrt(k))",
+      "num_coeffs": 5,
+      "reason": "Champion + Rational radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*abs(r)) / (1 + e*sqrt(k))",
+      "num_coeffs": 5,
+      "reason": "Champion + Linear radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "Polynomial inverse TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / sqrt(1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Sqrt of linear inverse TKE.",
+      "ep_type": "EP2"
+    }
+  ]
+}

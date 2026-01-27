@@ -1,0 +1,145 @@
+{
+    "generation": 1,
+    "models": [
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * x**b * log(c*x**d + 1)",
+            "id": 1,
+            "reason": "Stage 1 Diversity Generation: a * x**b * log(c*x**d + 1)"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * (c + x**b)**(-1.5) * tan(d/x)",
+            "id": 2,
+            "reason": "Stage 1 Diversity Generation: a * (c + x**b)**(-1.5) * tan(d/x)"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * (cosh(b*x) - 1)**c",
+            "id": 3,
+            "reason": "Stage 1 Diversity Generation: a * (cosh(b*x) - 1)**c"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * asin(b/(c + x**2)) + d*x",
+            "id": 4,
+            "reason": "Stage 1 Diversity Generation: a * asin(b/(c + x**2)) + d*x"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * log(b + abs(sin(c*x**d)))",
+            "id": 5,
+            "reason": "Stage 1 Diversity Generation: a * log(b + abs(sin(c*x**d)))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * exp(-b * erf(c*x + d))",
+            "id": 6,
+            "reason": "Stage 1 Diversity Generation: a * exp(-b * erf(c*x + d))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * besselj(b, c / (1 + d*x))",
+            "id": 7,
+            "reason": "Stage 1 Diversity Generation: a * besselj(b, c / (1 + d*x))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * tanh(b * atan(c*x) + d)",
+            "id": 8,
+            "reason": "Stage 1 Diversity Generation: a * tanh(b * atan(c*x) + d)"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * W(b * (x-c)**d)",
+            "id": 9,
+            "reason": "Stage 1 Diversity Generation: a * W(b * (x-c)**d)"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a / W(b*log(c*x+d))",
+            "id": 10,
+            "reason": "Stage 1 Diversity Generation: a / W(b*log(c*x+d))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * (b*x + c) / W(b*x + c) + d",
+            "id": 11,
+            "reason": "Stage 1 Diversity Generation: a * (b*x + c) / W(b*x + c) + d"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * W(b*x*exp(c*x+d)) / x",
+            "id": 12,
+            "reason": "Stage 1 Diversity Generation: a * W(b*x*exp(c*x+d)) / x"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "(a + b*sin(c*x)) / (d + cosh(x))",
+            "id": 13,
+            "reason": "Stage 1 Diversity Generation: (a + b*sin(c*x)) / (d + cosh(x))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * gamma(b*x) / (c + x**d)",
+            "id": 14,
+            "reason": "Stage 1 Diversity Generation: a * gamma(b*x) / (c + x**d)"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * (1 - erf(b*x)) / (c + sinh(d*x))",
+            "id": 15,
+            "reason": "Stage 1 Diversity Generation: a * (1 - erf(b*x)) / (c + sinh(d*x))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "(a*x + b*log(x+c)) / (d**2 + (x-b)**2)**0.5",
+            "id": 16,
+            "reason": "Stage 1 Diversity Generation: (a*x + b*log(x+c)) / (d**2 + (x-b)**2)**0.5"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a + integrate(b*exp(-c*(x-t)) * t**d, (t, 0, x))",
+            "id": 17,
+            "reason": "Stage 1 Diversity Generation: a + integrate(b*exp(-c*(x-t)) * t**d, (t, 0, x))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * integrate(cos(b*x*t) / (c**2 + t**2), (t, 0, d))",
+            "id": 18,
+            "reason": "Stage 1 Diversity Generation: a * integrate(cos(b*x*t) / (c**2 + t**2), (t, 0, d))"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * diff(besselj(b, c*x), x)",
+            "id": 19,
+            "reason": "Stage 1 Diversity Generation: a * diff(besselj(b, c*x), x)"
+        },
+        {
+            "num_coeffs": 4,
+            "ep_type": "Diversity",
+            "formula": "a * integrate((x**2 + t**2)**(b-1), (t, c, d))",
+            "id": 20,
+            "reason": "Stage 1 Diversity Generation: a * integrate((x**2 + t**2)**(b-1), (t, c, d))"
+        }
+    ]
+}

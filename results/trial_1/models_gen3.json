@@ -1,0 +1,145 @@
+{
+  "generation": 3,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Gen 2 Best: Rational decay in x.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Gen 2 Best + TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Gen 2 Best + Eddy viscosity modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "Gen 2 Runner-up: Gaussian with 1/x scaling denominator.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*x + e*k)",
+      "num_coeffs": 5,
+      "reason": "Gaussian with 1/x scaling + TKE denominator.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*x)^e",
+      "num_coeffs": 5,
+      "reason": "Gaussian with generalized power scaling denominator.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*sqrt(k))",
+      "num_coeffs": 5,
+      "reason": "Rational decay + sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-c) * (1 + d*r^2)^(-e)",
+      "num_coeffs": 5,
+      "reason": "Fully rational model (Gen 2 #5).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) / (1 + e*nut*x)",
+      "num_coeffs": 5,
+      "reason": "Rational decay + Viscous spreading denominator.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 - tanh(d*r^2))",
+      "num_coeffs": 4,
+      "reason": "Gaussian * Sigmoid radial profile (EP1).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*r^4)^(-e)",
+      "num_coeffs": 5,
+      "reason": "Higher order rational radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*omega)",
+      "num_coeffs": 5,
+      "reason": "Rational decay + Omega modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k / (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "Decaying TKE influence.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*nut*r)",
+      "num_coeffs": 5,
+      "reason": "Rational decay + Radial eddy viscosity effect.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*sqrt(x))",
+      "num_coeffs": 4,
+      "reason": "Gaussian with sqrt(x) scaling denominator.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 16,
+      "formula": "a * x^(-b) * exp(-c*r^2) * (1 - exp(-d*x))^e",
+      "num_coeffs": 5,
+      "reason": "Power-law with flexible near-wake correction.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*abs(r))",
+      "num_coeffs": 5,
+      "reason": "Rational decay + Non-Gaussian radial correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-1) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Fixed -1 power rational decay (Simplification).",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Fixed -2/3 power (theoretical wake decay).",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / x",
+      "num_coeffs": 3,
+      "reason": "Gaussian / x (Simplification).",
+      "ep_type": "EP4"
+    }
+  ]
+}

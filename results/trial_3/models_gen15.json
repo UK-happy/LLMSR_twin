@@ -1,0 +1,185 @@
+{
+  "generation": 15,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Keeping the best model",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Rational decay offset in x and r",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-f) * (1 + g*r^2)^(-h)",
+      "num_coeffs": 8,
+      "reason": "Product power law offset (Complex)",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d / (1 + exp(e*x))",
+      "num_coeffs": 5,
+      "reason": "Sigmoid decaying offset",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - tanh(e*x))",
+      "num_coeffs": 5,
+      "reason": "Tanh decaying offset",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.5)",
+      "num_coeffs": 5,
+      "reason": "Sqrt decay offset",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * log(1 + e*x)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Inverse log decay offset",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*k + f*nut)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Offset decaying with TKE and nut",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*sqrt(k) + f*x)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Offset decaying with sqrt(k) and x",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.00001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow power law decay (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.00001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow exponential decay (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^2)^(-0.00001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow radial decay (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*k)^(-0.00001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow TKE decay (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*nut)^(-0.00001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow nut decay (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*omega)^(-0.00001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow omega decay (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-1)",
+      "num_coeffs": 5,
+      "reason": "1/x decaying offset (Retry)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-2)",
+      "num_coeffs": 5,
+      "reason": "1/x^2 decaying offset (Retry)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Radial decaying offset (Retry)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*r^2)",
+      "num_coeffs": 5,
+      "reason": "Gaussian decaying offset (Retry)",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Control: No offset",
+      "ep_type": "EP4",
+      "parent_generation": 14,
+      "parent_id": 1
+    }
+  ]
+}

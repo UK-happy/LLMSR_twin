@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Classic Gaussian profile with exponential decay.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-b) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Power-law decay in x with Gaussian radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Exponential decay with polynomial (rational) radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Rational decay in x with Gaussian radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^4)",
+      "num_coeffs": 3,
+      "reason": "Super-Gaussian (Top-hat like) radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated linearly by TKE (k).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated linearly by eddy viscosity (nut).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modulated linearly by specific dissipation (omega).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x * (1 + c*k)) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Decay rate modulated by TKE.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2 / (1 + d*nut))",
+      "num_coeffs": 4,
+      "reason": "Wake width modulated by eddy viscosity.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*sqrt(x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Slower decay using sqrt(x).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * (exp(-c*r^2) + d*exp(-e*r^2))",
+      "num_coeffs": 5,
+      "reason": "Double Gaussian to capture complex radial shapes.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * log(1 + b/x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Logarithmic decay behavior.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * (1 - tanh(c*(r^2 - d)))",
+      "num_coeffs": 4,
+      "reason": "Sigmoidal radial profile for sharp wake edges.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Combined modulation by TKE and eddy viscosity.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Power-law/Polynomial model with TKE term.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*abs(r))",
+      "num_coeffs": 3,
+      "reason": "Exponential radial decay (sharper peak than Gaussian).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x^2)^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Inverse quadratic decay in x.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Modulation by sqrt(k) (turbulence intensity proxy).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * exp(-d*nut*x)",
+      "num_coeffs": 4,
+      "reason": "Decay enhanced by eddy viscosity accumulated over distance.",
+      "ep_type": "EP1"
+    }
+  ]
+}

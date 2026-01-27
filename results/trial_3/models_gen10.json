@@ -1,0 +1,185 @@
+{
+  "generation": 10,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Keeping the best model",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.001)",
+      "num_coeffs": 5,
+      "reason": "Extremely slow decay for offset (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.0001)",
+      "num_coeffs": 5,
+      "reason": "Virtually constant but decaying offset (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.001)",
+      "num_coeffs": 5,
+      "reason": "Very slow exponential decay offset",
+      "ep_type": "EP3",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) - d",
+      "num_coeffs": 4,
+      "reason": "Negative offset (Testing)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Offset with TKE (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*sqrt(k))",
+      "num_coeffs": 5,
+      "reason": "Offset with sqrt(k) (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Offset with nut (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*omega)",
+      "num_coeffs": 5,
+      "reason": "Offset with omega (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)",
+      "num_coeffs": 5,
+      "reason": "Linear offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)",
+      "num_coeffs": 5,
+      "reason": "Quadratic offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "Radial offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*r^4)",
+      "num_coeffs": 5,
+      "reason": "Quartic radial offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x + f*r^2)",
+      "num_coeffs": 6,
+      "reason": "Coupled offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Near-wake offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - exp(-e*x^2))",
+      "num_coeffs": 5,
+      "reason": "Smoother near-wake offset (Retrying)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + x)^(-b) * (1 + r)^(-c) * (1 + k)^(-d) * (1 + nut)^(-e)",
+      "num_coeffs": 5,
+      "reason": "Quadruple power law (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r) * exp(-d*k) * exp(-e*nut)",
+      "num_coeffs": 5,
+      "reason": "Quadruple exponential (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + x)^(-b) * (1 + r^2)^(-c) * (1 + k)^(-d) * (1 + nut)^(-e)",
+      "num_coeffs": 5,
+      "reason": "Mixed power law (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Original best model without offset (Simplification)",
+      "ep_type": "EP4",
+      "parent_generation": 9,
+      "parent_id": 1
+    }
+  ]
+}

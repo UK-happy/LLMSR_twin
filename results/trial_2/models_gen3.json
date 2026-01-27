@@ -1,0 +1,145 @@
+{
+  "generation": 3,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*k)",
+      "num_coeffs": 5,
+      "reason": "Extending the best model with a combined linear and sqrt TKE denominator.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "Slightly adjusting the TKE power in the denominator from 0.5 to 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.4)",
+      "num_coeffs": 4,
+      "reason": "Slightly adjusting the TKE power in the denominator from 0.5 to 0.4.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Adding eddy viscosity to the denominator of the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*omega)",
+      "num_coeffs": 5,
+      "reason": "Adding omega to the denominator of the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Fine-tuning the decay rate (-0.65) with the best structure.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-0.68) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Fine-tuning the decay rate (-0.68) with the best structure.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) * (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "Making the TKE modulation distance-dependent.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / sqrt(1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Applying the square root to the entire denominator term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 - d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Using a linear approximation (1-x) instead of inverse (1/(1+x)).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k)) * (1 - exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Enforcing zero deficit at x=0 (near wake correction).",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(abs(k)))",
+      "num_coeffs": 4,
+      "reason": "Ensuring k is treated as non-negative (though physically it is).",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k)) * (1 + e*abs(r))^(-1)",
+      "num_coeffs": 5,
+      "reason": "Adding a polynomial decay to the radial profile for better tail fit.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k)) * (x / (x + e))",
+      "num_coeffs": 5,
+      "reason": "Using a rational function for near-wake correction.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 15,
+      "formula": "a * x^(-2/3) * exp(-b*r^2) / (1 + c*sqrt(k))",
+      "num_coeffs": 3,
+      "reason": "Simplifying by removing the offset in x.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + x)^(-2/3) * exp(-b*r^2) / (1 + c*sqrt(k))",
+      "num_coeffs": 3,
+      "reason": "Simplifying by fixing the x-scale coefficient to 1.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*omega)",
+      "num_coeffs": 5,
+      "reason": "Testing omega modulation with a polynomial radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*nut^2)",
+      "num_coeffs": 5,
+      "reason": "Quadratic eddy viscosity modulation with free power law.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-1/2) * exp(-c*r^2) * log(1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Logarithmic TKE dependence with -1/2 power law.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k * exp(-e*r))",
+      "num_coeffs": 5,
+      "reason": "Radially dependent TKE modulation.",
+      "ep_type": "EP1"
+    }
+  ]
+}

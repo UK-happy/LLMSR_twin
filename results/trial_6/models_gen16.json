@@ -1,0 +1,165 @@
+{
+  "generation": 16,
+  "models": [
+    {
+      "id": 301,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Elitism: Keep best model (Seed 1)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 302,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add linear TKE term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 303,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add linear Viscosity term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 304,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add linear Omega term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 305,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*k)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-k offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 306,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*nut)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-nut offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 307,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*omega)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-omega offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 308,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + TKE correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 309,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + Viscosity correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 310,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*omega) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + Omega correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 311,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add quadratic TKE term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 312,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add quadratic Viscosity term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 313,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add quadratic Omega term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 314,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x)) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover - Seed 1 with Seed 4 near wake term",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 315,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP6: Crossover - Seed 1 offset with Seed 2 main decay",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 316,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*x^2))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics - Ensure zero at x=0 for offset (quadratic)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 317,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*abs(r)))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics - Ensure zero at r=0 for offset (linear)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 318,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP4: Simplification - Merge offset into main term (quadratic)",
+      "ep_type": "EP4",
+      "parent_id": 1
+    },
+    {
+      "id": 319,
+      "formula": "a * (1 + b*x/c)^(-2) * (1 + d*r^2)^(-1) + e * (1 + f*x^2/g)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP7: Dimensional Analysis - Explicit length scales",
+      "ep_type": "EP7",
+      "parent_id": 1
+    },
+    {
+      "id": 320,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP1: Diversity - Add sqrt x term to offset",
+      "ep_type": "EP1",
+      "parent_id": 1
+    }
+  ]
+}

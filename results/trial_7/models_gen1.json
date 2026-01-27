@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Seed 1: Proven high performance model",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x)",
+      "num_coeffs": 5,
+      "reason": "Seed 2: Complex radial decay with sqrt(x) scaling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-2) * (1 + d*sqrt(x))",
+      "num_coeffs": 4,
+      "reason": "Seed 3: Another variation of sqrt(x) scaling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "x^(-0.596) * exp(-a*r^2) / (1 + b*k^0.9505) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Seed 4: Turbulence kinetic energy dependent model",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Standard Gaussian wake model baseline",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (cos(c*r) + 1)",
+      "num_coeffs": 3,
+      "reason": "Inspired by Jensen-k (Cosine) model: Cosine radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * x^(-0.5) * (1 + b*r^2)^(-1)",
+      "num_coeffs": 2,
+      "reason": "Inspired by Larsen model: x^(-1/2) decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x*nut)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Incorporating eddy viscosity (nut) into expansion rate",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Eddy viscosity as a scaling factor",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Turbulence kinetic energy as a scaling factor",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x)",
+      "num_coeffs": 2,
+      "reason": "Self-similar Gaussian profile (width ~ sqrt(x))",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*cos(e*r))",
+      "num_coeffs": 5,
+      "reason": "Gaussian with cosine modulation (Curled Wake inspiration)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x))",
+      "num_coeffs": 4,
+      "reason": "Near-wake correction term (1 - exp(-dx))",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega)",
+      "num_coeffs": 4,
+      "reason": "Specific dissipation rate (omega) influence",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * x^(-0.66) * (1 + b*r^2)^(-1)",
+      "num_coeffs": 2,
+      "reason": "Power law decay with exponent -2/3 (theoretical)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r)^1.5)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Non-quadratic radial decay (r^1.5)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * tanh(d*x)",
+      "num_coeffs": 4,
+      "reason": "Tanh near-wake transition",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*r^4)",
+      "num_coeffs": 4,
+      "reason": "Super-Gaussian radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut/x)",
+      "num_coeffs": 4,
+      "reason": "Eddy viscosity effect decaying with distance",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k/x)",
+      "num_coeffs": 4,
+      "reason": "TKE effect decaying with distance",
+      "ep_type": "EP1"
+    }
+  ]
+}

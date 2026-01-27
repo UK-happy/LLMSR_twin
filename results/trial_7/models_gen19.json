@@ -1,0 +1,185 @@
+{
+  "generation": 19,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 1",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 2",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 3",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 4",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 5",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 6",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 7",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 8",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 9",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Massive Exploitation of Gen 13 ID 1 structure - Attempt 10",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with quadratic TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*sqrt(k))",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with sqrt TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k/x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with decaying TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with growing TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*log(1+k))",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with log TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*exp(-k))",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with exp TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*tanh(k))",
+      "num_coeffs": 6,
+      "reason": "EP2: Variation with tanh TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k + g*k^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Variation with polynomial TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k + g*sqrt(k))",
+      "num_coeffs": 7,
+      "reason": "EP2: Variation with mixed TKE",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k + g*nut)",
+      "num_coeffs": 7,
+      "reason": "EP2: Variation with TKE and Nut linear combo",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    }
+  ]
+}

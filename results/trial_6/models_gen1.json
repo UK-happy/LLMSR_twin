@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Seed 1: High performing rational decay model from previous trials.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Seed 2: Sqrt-based decay with rational radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + d*r^4)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Seed 3: Higher order radial decay term.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x))",
+      "num_coeffs": 4,
+      "reason": "Seed 4: Near wake correction term.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Classic Gaussian wake model structure.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Power law decay with rational radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Rational axial decay with Gaussian radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Adding turbulence kinetic energy (k) dependency to Seed 1 structure.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Adding eddy viscosity (nut) dependency to Seed 1 structure.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Adding specific dissipation rate (omega) dependency to Seed 1 structure.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * tanh(b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Using tanh for axial decay behavior.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*log(1+x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Logarithmic decay structure.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * cos(c*r)^2",
+      "num_coeffs": 3,
+      "reason": "Cosine squared radial profile (bounded).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*r^2)",
+      "num_coeffs": 4,
+      "reason": "Coupled x-r term to capture spreading interaction.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x) * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Two-component model: Rational far wake + Exponential near wake.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x/c)^(-2) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Dimensional analysis inspired form with length scale c.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r)^1.5)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Fractional power radial decay.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * sqrt(1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Sqrt turbulence dependency.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*k)",
+      "num_coeffs": 4,
+      "reason": "Coupled x-k term.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*r*nut)",
+      "num_coeffs": 4,
+      "reason": "Coupled r-nut term.",
+      "ep_type": "EP1"
+    }
+  ]
+}

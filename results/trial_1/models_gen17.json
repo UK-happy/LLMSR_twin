@@ -1,0 +1,145 @@
+{
+  "generation": 17,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9)",
+      "num_coeffs": 5,
+      "reason": "Gen 16 Champion: -0.655 power + TKE^0.6 + TKE^1.9.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.85)",
+      "num_coeffs": 5,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.85.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.95)",
+      "num_coeffs": 5,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.95.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.59 + e*k^1.9)",
+      "num_coeffs": 5,
+      "reason": "-0.655 power + TKE^0.59 + TKE^1.9.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.61 + e*k^1.9)",
+      "num_coeffs": 5,
+      "reason": "-0.655 power + TKE^0.61 + TKE^1.9.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.8)",
+      "num_coeffs": 5,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.8.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2.0)",
+      "num_coeffs": 5,
+      "reason": "-0.655 power + TKE^0.6 + TKE^2.0.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-0.652) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9)",
+      "num_coeffs": 5,
+      "reason": "-0.652 power + TKE^0.6 + TKE^1.9.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-0.658) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9)",
+      "num_coeffs": 5,
+      "reason": "-0.658 power + TKE^0.6 + TKE^1.9.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9 + f*nut)",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9 + f*sqrt(nut))",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Sqrt(Nut).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9 + f*k)",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9 + f*k^3)",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + TKE^3.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9) * (1 - f*tanh(r))",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Tanh(r).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9) * (1 - f*k)",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Linear TKE decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9) * (1 - f*k^0.6)",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + TKE^0.6 decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9) * (1 - f*exp(-x))",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Exp decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9) * (1 - f*r^2)",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + r^2 correction.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9 + f*abs(r))",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Linear radial.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-0.655) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.9 + f*sqrt(k))",
+      "num_coeffs": 6,
+      "reason": "-0.655 power + TKE^0.6 + TKE^1.9 + Sqrt(TKE).",
+      "ep_type": "EP2"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "generation": 7,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen6-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*x + e*x^2))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen6-ID10 with quadratic width expansion",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 10
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*sqrt(x)))",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen6-ID10 with sqrt width expansion",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 10
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 / (1 + d*x))^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen6-ID10 but rational radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 10
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k*x + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen6-ID15 with quadratic TKE",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 15
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut*x)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen6-ID16 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 6,
+      "parent_id": 16
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*omega*x)",
+      "num_coeffs": 4,
+      "reason": "EP1: Omega-x coupled term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * exp(d*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Exp(k) modulation",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * exp(d*nut)",
+      "num_coeffs": 4,
+      "reason": "EP1: Exp(nut) modulation",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Linear x-k coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*nut)",
+      "num_coeffs": 4,
+      "reason": "EP1: Linear x-nut coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega)",
+      "num_coeffs": 4,
+      "reason": "EP1: Linear x-omega coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^2*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Quadratic x-k coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^2*nut)",
+      "num_coeffs": 4,
+      "reason": "EP1: Quadratic x-nut coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^2*omega)",
+      "num_coeffs": 4,
+      "reason": "EP1: Quadratic x-omega coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Sqrt x-k coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen6-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 6,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen6-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 6,
+      "parent_id": 1
+    }
+  ]
+}

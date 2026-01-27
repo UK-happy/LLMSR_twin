@@ -1,0 +1,161 @@
+{
+  "generation": 3,
+  "models": [
+    {
+      "id": 41,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Elitism: Keep best model (Seed 1)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 42,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Add TKE sqrt to offset (Seed 1 variant)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 43,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Add Viscosity sqrt to offset (Seed 1 variant)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 44,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Add Omega sqrt to offset (Seed 1 variant)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 45,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*k)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble-like addition of x*k term to offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 46,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*nut)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble-like addition of x*nut term to offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 47,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover Seed 1 with Viscosity model",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 48,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover Seed 1 offset with Seed 2 main decay + TKE",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 49,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2)^(-1) * (1 + g*k)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover Seed 1 offset with Seed 3 radial + TKE",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 50,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x)) + e * (1 + f*x^2)^(-1) * (1 + g*nut)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover Seed 1 offset with Seed 4 near wake + Viscosity",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 51,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d * (1 + e*x^2)^(-1) * (1 + f*k))",
+      "num_coeffs": 6,
+      "reason": "EP5: Mutation - Multiplicative offset with TKE",
+      "ep_type": "EP5",
+      "parent_id": 1
+    },
+    {
+      "id": 52,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * tanh(e*x^2) * (1 + f*r^2)",
+      "num_coeffs": 6,
+      "reason": "EP5: Mutation - Tanh offset with radial decay",
+      "ep_type": "EP5",
+      "parent_id": 1
+    },
+    {
+      "id": 53,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Rational decay + Gaussian radial + TKE",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 54,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "EP1: Rational decay + Gaussian radial + Viscosity",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 55,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "EP1: Rational decay + Gaussian radial + Omega",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 56,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Coupled x-k term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 57,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*x^2))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics check - ensure zero at x=0 for offset (stronger constraint)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 58,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*abs(r)))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics check - ensure zero at r=0 for offset (linear)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 59,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP4: Simplify - merge offset into main term (multiplicative)",
+      "ep_type": "EP4",
+      "parent_id": 1
+    },
+    {
+      "id": 60,
+      "formula": "a * (1 + b*x/c)^(-2) * (1 + d*r^2)^(-1) + e * (1 + f*x^2/g)^(-1) * (1 + h*k)",
+      "num_coeffs": 8,
+      "reason": "EP7: Dimensional analysis + TKE",
+      "ep_type": "EP7",
+      "parent_id": 1
+    }
+  ]
+}

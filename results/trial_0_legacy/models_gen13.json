@@ -1,0 +1,145 @@
+{
+  "generation": 13,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "Retaining Gen 12 best model (Fractional inverse power -1.5) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.25",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.75)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking fractional power -1.75",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.4)",
+      "num_coeffs": 7,
+      "reason": "EP2: Fine-tuning fractional power around -1.5",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.6)",
+      "num_coeffs": 7,
+      "reason": "EP2: Fine-tuning fractional power around -1.5",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Absolute linear radial modulation with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^4))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Higher-order radial modulation with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * exp(g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Exponential radial modulation with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x^2) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gaussian downstream decay with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*sqrt(x)) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Stretched exponential decay with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * exp(-f*x) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Replacing nut with k in the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Log saturation with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5) * (1 + h*x)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding global streamwise decay to best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2 + h*r^4))^(-1.5)",
+      "num_coeffs": 8,
+      "reason": "EP2: Polynomial radial modulation with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5) * (1 + h*nut)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding global turbulence decay to best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut * (1 + f*r^2)) * exp(-g*x))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Radial modulation inside tanh with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*x*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Coupled x-r modulation with best power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Super-Gaussian base with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*tanh(f*nut) * exp(-g*x) * (1 + h*r^2))^(-1.5)",
+      "num_coeffs": 8,
+      "reason": "EP2: Bastankhah base with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5) * (1 + h*k)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding k-term to best structure",
+      "ep_type": "EP2"
+    }
+  ]
+}

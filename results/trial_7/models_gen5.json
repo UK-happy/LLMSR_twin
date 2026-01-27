@@ -1,0 +1,185 @@
+{
+  "generation": 5,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP4: Simplification of Gen 3 ID 1 (removed TKE term)",
+      "ep_type": "EP4",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x)",
+      "num_coeffs": 5,
+      "reason": "EP4: Simplification of Gen 4 ID 15 (removed TKE/x term)",
+      "ep_type": "EP4",
+      "parent_generation": 4,
+      "parent_id": 15
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * x^(-0.33)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 3 ID 1 with weaker Larsen decay",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*nut)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 4 ID 11 (Ensemble) with coefficient tuning",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 11
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*r^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with simple radial correction",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * exp(-f*r^2)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover of Gen 3 ID 1 and Gaussian profile",
+      "ep_type": "EP6",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 3 ID 8 with linear x term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x^2)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with near-wake correction",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover of Gen 3 ID 8 and TKE term",
+      "ep_type": "EP6",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*sqrt(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with sqrt(x) correction",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*nut/x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 3 ID 8 with extra decaying nut term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*abs(r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with linear radial term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*cos(g*r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 8 with cosine modulation",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * tanh(g*x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with tanh transition",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*x*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 3 ID 8 with x*k term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*nut)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with x*nut term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 3 ID 8 with extra radial decay",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with extra Omega term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut/x) * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 3 ID 8 with near-wake correction",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 8
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 3 ID 1 with x*k term",
+      "ep_type": "EP2",
+      "parent_generation": 3,
+      "parent_id": 1
+    }
+  ]
+}

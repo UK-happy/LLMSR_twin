@@ -1,0 +1,185 @@
+{
+  "generation": 12,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen11-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * exp(g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + exp omega",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * log(1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + log omega",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * sqrt(1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + sqrt omega",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*omega^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + quadratic omega",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*k^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + quadratic TKE",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*nut^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + quadratic Nut",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x*omega + f*x^2*omega)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best structure + polynomial x-omega",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*r*omega + f*r^2*omega)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best structure + polynomial r-omega",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x*k + f*x^2*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best structure + polynomial x-TKE",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x*nut + f*x^2*nut)",
+      "num_coeffs": 6,
+      "reason": "EP2: Best structure + polynomial x-Nut",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^3)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen11-ID10 refinement (cubic omega)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 10
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*exp(omega))",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen11-ID10 refinement (exp omega)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 10
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*log(omega))",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen11-ID10 refinement (log omega)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 10
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*sqrt(omega))",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen11-ID10 refinement (sqrt omega)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 10
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.25)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen11-ID10 refinement (quart root omega)",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 10
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen11-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 11,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen11-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 11,
+      "parent_id": 1
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+======================================================================
+Evolution Summary
+======================================================================
+
+Total Generations: 20
+
+----------------------------------------------------------------------
+Generation 1
+----------------------------------------------------------------------
+  Best Score:   0.000457
+  Mean Score:   0.001742
+  Best Model:   a * (1 + b*x)^(-2/3) * exp(-c*r^2)
+  Coefficients: [9.2886, 69.7199, 2.4147]
+  Reason:       Theoretical far-wake decay rate (-2/3) with Gaussian profile.
+
+----------------------------------------------------------------------
+Generation 2
+----------------------------------------------------------------------
+  Best Score:   0.000375
+  Mean Score:   99999999999242736.000000
+  Best Model:   a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k))
+  Coefficients: [68.2673, 55.925, 1.0778, 55.1854]
+  Reason:       Inverse sqrt TKE modulation on the best model.
+
+----------------------------------------------------------------------
+Generation 3
+----------------------------------------------------------------------
+  Best Score:   0.000348
+  Mean Score:   0.000685
+  Best Model:   a * x^(-2/3) * exp(-b*r^2) / (1 + c*sqrt(k))
+  Coefficients: [4.8133, 1.4589, 53.1755]
+  Reason:       Simplifying by removing the offset in x.
+
+----------------------------------------------------------------------
+Generation 4
+----------------------------------------------------------------------
+  Best Score:   0.000349
+  Mean Score:   0.001002
+  Best Model:   a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k))
+  Coefficients: [2.6828, 1.3773, 27.6466]
+  Reason:       Adjusting decay rate in the simplified model.
+
+----------------------------------------------------------------------
+Generation 5
+----------------------------------------------------------------------
+  Best Score:   0.000349
+  Mean Score:   0.000942
+  Best Model:   x^(-0.6) * exp(-a*r^2) / (1 + b*sqrt(k))
+  Coefficients: [1.3485, 7.7112]
+  Reason:       Removing amplitude coefficient 'a'.
+
+----------------------------------------------------------------------
+Generation 6
+----------------------------------------------------------------------
+  Best Score:   0.000342
+  Mean Score:   0.000786
+  Best Model:   x^(-0.6) * exp(-a*r^2) / (1 + b*k)
+  Coefficients: [1.2922, 40.3983]
+  Reason:       Simplifying TKE term to linear.
+
+----------------------------------------------------------------------
+Generation 7
+----------------------------------------------------------------------
+  Best Score:   0.000339
+  Mean Score:   0.000714
+  Best Model:   x^(-0.61) * exp(-a*r^2) / (1 + b*k)
+  Coefficients: [1.3839, 46.2503]
+  Reason:       Fine-tuning decay rate (-0.61) in the simplified model.
+
+----------------------------------------------------------------------
+Generation 8
+----------------------------------------------------------------------
+  Best Score:   0.000336
+  Mean Score:   0.000674
+  Best Model:   x^(-0.61) * exp(-a*r^2) / (1 + b*k) * (1 - exp(-c*x))
+  Coefficients: [1.3285, 43.8679, 10.5243]
+  Reason:       Enforcing near-wake zero deficit on the simplified model.
+
+----------------------------------------------------------------------
+Generation 9
+----------------------------------------------------------------------
+  Best Score:   0.000333
+  Mean Score:   0.000785
+  Best Model:   x^(-0.6) * exp(-a*r^2) / (1 + b*k) * (1 - exp(-c*x))
+  Coefficients: [1.4699, 42.0214, 38.1095]
+  Reason:       Re-evaluating decay rate (-0.6) in the best model.
+
+----------------------------------------------------------------------
+Generation 10
+----------------------------------------------------------------------
+  Best Score:   0.000335
+  Mean Score:   0.000776
+  Best Model:   x^(-0.6) * exp(-a*r^2) / (1 + b*k)
+  Coefficients: [1.3387, 44.1536]
+  Reason:       Removing the near-wake term to see if it's essential.
+
+----------------------------------------------------------------------
+Generation 11
+----------------------------------------------------------------------
+  Best Score:   0.000334
+  Mean Score:   0.000766
+  Best Model:   x^(-0.595) * exp(-a*r^2) / (1 + b*k) * (1 - exp(-c*x))
+  Coefficients: [1.5297, 40.3129, 84.1416]
+  Reason:       Fine-tuning decay rate (-0.595) in the best model.
+
+----------------------------------------------------------------------
+Generation 12
+----------------------------------------------------------------------
+  Best Score:   0.000336
+  Mean Score:   0.000759
+  Best Model:   x^(-0.595) * exp(-a*r^2) / (1 + b*k) * (1 - exp(-x))
+  Coefficients: [1.4498, 46.1756]
+  Reason:       Simplifying by fixing the near-wake decay rate to 1.
+
+----------------------------------------------------------------------
+Generation 13
+----------------------------------------------------------------------
+  Best Score:   0.000330
+  Mean Score:   0.000809
+  Best Model:   x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))
+  Coefficients: [1.3973, 36.4776]
+  Reason:       Adjusting TKE power in the best model (closer to linear).
+
+----------------------------------------------------------------------
+Generation 14
+----------------------------------------------------------------------
+  Best Score:   0.000332
+  Mean Score:   0.000709
+  Best Model:   x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.98) * (1 - exp(-x))
+  Coefficients: [1.4612, 35.9305]
+  Reason:       Adjusting TKE power in the best model (0.98).
+
+----------------------------------------------------------------------
+Generation 15
+----------------------------------------------------------------------
+  Best Score:   0.000334
+  Mean Score:   0.000703
+  Best Model:   x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * tanh(x)
+  Coefficients: [1.5962, 34.8987]
+  Reason:       Using tanh for near-wake correction.
+
+----------------------------------------------------------------------
+Generation 16
+----------------------------------------------------------------------
+  Best Score:   0.000330
+  Mean Score:   0.000663
+  Best Model:   x^(-0.595) * exp(-a*r^2) / (1 + b*k) * (1 - exp(-x))
+  Coefficients: [1.5106, 39.5591]
+  Reason:       Simplifying TKE power to linear (1.0).
+
+----------------------------------------------------------------------
+Generation 17
+----------------------------------------------------------------------
+  Best Score:   0.000329
+  Mean Score:   0.000662
+  Best Model:   x^(-0.596) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))
+  Coefficients: [1.4348, 34.4507]
+  Reason:       Fine-tuning decay rate (-0.596) in the best model.
+
+----------------------------------------------------------------------
+Generation 18
+----------------------------------------------------------------------
+  Best Score:   0.000332
+  Mean Score:   0.000623
+  Best Model:   x^(-0.5955) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))
+  Coefficients: [1.425, 32.7035]
+  Reason:       Fine-tuning decay rate (-0.5955) in the best model.
+
+----------------------------------------------------------------------
+Generation 19
+----------------------------------------------------------------------
+  Best Score:   0.000331
+  Mean Score:   0.000652
+  Best Model:   x^(-0.5958) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))
+  Coefficients: [1.4717, 32.7341]
+  Reason:       Fine-tuning decay rate (-0.5958) in the best model.
+
+----------------------------------------------------------------------
+Generation 20
+----------------------------------------------------------------------
+  Best Score:   0.000332
+  Mean Score:   0.000601
+  Best Model:   x^(-0.596) * exp(-a*r^2) / (1 + b*k^0.9505) * (1 - exp(-x))
+  Coefficients: [1.6143, 33.3103]
+  Reason:       Fine-tuning TKE power (0.9505) in the best model.
+
+======================================================================
+🏆 Overall Best Model (Found in Generation 17)
+======================================================================
+Score:        0.000329
+Formula:      x^(-0.596) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))
+Coefficients: [1.4348, 34.4507]
+Reason:       Fine-tuning decay rate (-0.596) in the best model.
+
+Improvement:  27.88%

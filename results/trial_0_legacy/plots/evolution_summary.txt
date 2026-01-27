@@ -1,0 +1,195 @@
+======================================================================
+Evolution Summary
+======================================================================
+
+Total Generations: 20
+
+----------------------------------------------------------------------
+Generation 1
+----------------------------------------------------------------------
+  Best Score:   0.002045
+  Mean Score:   0.015408
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)
+  Coefficients: [94.156, 0.0048, 70.6771, 72.2778]
+  Reason:       Gaussian profile modified by linear turbulence kinetic energy term
+
+----------------------------------------------------------------------
+Generation 2
+----------------------------------------------------------------------
+  Best Score:   0.002046
+  Mean Score:   0.014987
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^2)
+  Coefficients: [30.2941, 0.0053, 47.9066, 80.3365, 19.2752]
+  Reason:       EP2: Polynomial expansion in k
+
+----------------------------------------------------------------------
+Generation 3
+----------------------------------------------------------------------
+  Best Score:   0.002046
+  Mean Score:   0.015372
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k))
+  Coefficients: [88.9155, 0.0023, 82.0459, 19.6734, 28.6998]
+  Reason:       EP1: Saturating k-effect using tanh
+
+----------------------------------------------------------------------
+Generation 4
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.021165
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut))
+  Coefficients: [45.1833, 0.0037, 10.6163, 35.3632, 55.1303]
+  Reason:       EP2: Tanh saturation applied to eddy viscosity
+
+----------------------------------------------------------------------
+Generation 5
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.004225
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2))
+  Coefficients: [36.0919, 72.4237, 92.9385, 31.7927, 0.0044, 35.518]
+  Reason:       EP2: Radial modulation of saturating viscosity effect
+
+----------------------------------------------------------------------
+Generation 6
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.028191
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2))^(-1)
+  Coefficients: [30.1668, 30.6527, 13.4029, 51.1729, 0.0036, 12.7513]
+  Reason:       EP1: Inverse dependency on the modulated term
+
+----------------------------------------------------------------------
+Generation 7
+----------------------------------------------------------------------
+  Best Score:   0.002045
+  Mean Score:   0.015755
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*x))^(-1)
+  Coefficients: [52.7963, 90.1258, 8.4535, 11.8983, 0.0029, 54.2539]
+  Reason:       EP2: Inverse form with streamwise modulation
+
+----------------------------------------------------------------------
+Generation 8
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.023013
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) / (1 + f*x))^(-1)
+  Coefficients: [5.4694, 96.6654, 42.4884, 51.8733, 0.0039, 5.5674]
+  Reason:       EP1: Inverse of a ratio with streamwise term (checking if x should be in numerator of denominator)
+
+----------------------------------------------------------------------
+Generation 9
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.026818
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) / (1 + f*x))^(-1)
+  Coefficients: [46.5213, 29.4312, 86.7078, 56.9046, 0.0037, 10.1097]
+  Reason:       Retaining Gen 8 best model (Inverse with downstream decaying turbulence) for reference
+
+----------------------------------------------------------------------
+Generation 10
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.023505
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2)
+  Coefficients: [49.055, 76.0586, 96.9297, 91.4994, 0.0038, 47.3928]
+  Reason:       EP2: Squared inverse with exponential decay
+
+----------------------------------------------------------------------
+Generation 11
+----------------------------------------------------------------------
+  Best Score:   0.002045
+  Mean Score:   0.056096
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-2)
+  Coefficients: [54.9819, 45.4705, 58.3921, 54.5296, 0.0045, 39.0551, 1.4169]
+  Reason:       EP2: Combining exponential decay with radial modulation
+
+----------------------------------------------------------------------
+Generation 12
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.005055
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5)
+  Coefficients: [81.7949, 11.9467, 6.1322, 15.1132, 0.0038, 86.7757, 29.561]
+  Reason:       EP2: Fractional power with best structure
+
+----------------------------------------------------------------------
+Generation 13
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.051200
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.5)
+  Coefficients: [17.8357, 44.449, 97.5369, 83.5194, 0.0032, 20.6655, 62.8456]
+  Reason:       EP2: Absolute linear radial modulation with best power
+
+----------------------------------------------------------------------
+Generation 14
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.015960
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)
+  Coefficients: [14.7249, 47.206, 14.4763, 23.2561, 0.0042, 76.9103, 60.7679]
+  Reason:       EP2: Checking fractional power -1.25 with abs radial
+
+----------------------------------------------------------------------
+Generation 15
+----------------------------------------------------------------------
+  Best Score:   0.002048
+  Mean Score:   0.013357
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25) * (1 + h*x)^(-1)
+  Coefficients: [28.7717, 11.2342, 33.2947, 90.9401, 0.0019, 5.7674, 68.4298, 27.1473]
+  Reason:       EP2: Adding global streamwise decay
+
+----------------------------------------------------------------------
+Generation 16
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.051281
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + tanh(d*nut) * exp(-e*x) * (1 + f*abs(r)))^(-1.25) * (1 + g*x)^(-1)
+  Coefficients: [34.0156, 50.788, 34.3867, 33.0501, 0.0041, 64.8961, 71.914]
+  Reason:       EP4: Simplifying Gen 15 best model
+
+----------------------------------------------------------------------
+Generation 17
+----------------------------------------------------------------------
+  Best Score:   0.002045
+  Mean Score:   0.026269
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.25)
+  Coefficients: [11.7507, 43.0422, 64.339, 72.9808, 0.0028, 38.6299]
+  Reason:       EP4: Fixing exponential decay rate to 0.1 (slow decay)
+
+----------------------------------------------------------------------
+Generation 18
+----------------------------------------------------------------------
+  Best Score:   0.002045
+  Mean Score:   0.016775
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.25) * (1 + g*k)^(-1)
+  Coefficients: [32.3391, 12.0381, 5.1133, 46.3379, 0.0027, 60.5934, 24.0866]
+  Reason:       EP2: Adding k-term to simplified model
+
+----------------------------------------------------------------------
+Generation 19
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.043018
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2)
+  Coefficients: [54.8952, 77.5605, 24.3285, 97.0434, 0.0031, 76.1658]
+  Reason:       EP2: Checking fractional power -1.2 again
+
+----------------------------------------------------------------------
+Generation 20
+----------------------------------------------------------------------
+  Best Score:   0.002044
+  Mean Score:   0.040823
+  Best Model:   a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2) + g
+  Coefficients: [12.7823, 14.9263, 79.672, 47.0883, 0.0041, 87.8865, 41.6735]
+  Reason:       Complex: Adding offset to best model
+
+======================================================================
+🏆 Overall Best Model (Found in Generation 10)
+======================================================================
+Score:        0.002044
+Formula:      a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2)
+Coefficients: [49.055, 76.0586, 96.9297, 91.4994, 0.0038, 47.3928]
+Reason:       EP2: Squared inverse with exponential decay
+
+Improvement:  0.05%

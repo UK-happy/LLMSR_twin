@@ -1,0 +1,145 @@
+{
+  "generation": 4,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k))",
+      "num_coeffs": 5,
+      "reason": "Retaining Gen 3 best model (tanh saturation) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*sqrt(k)))",
+      "num_coeffs": 5,
+      "reason": "EP2: Tanh saturation with square root of k",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k^2))",
+      "num_coeffs": 5,
+      "reason": "EP2: Tanh saturation with quadratic k",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k / (1 + e*k))",
+      "num_coeffs": 5,
+      "reason": "EP2: Michaelis-Menten type saturation (rational function)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*atan(e*k))",
+      "num_coeffs": 5,
+      "reason": "EP2: Arctan saturation (alternative to tanh)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*tanh(e*k))",
+      "num_coeffs": 5,
+      "reason": "EP2: Combining Super-Gaussian (2nd best structure) with tanh(k)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP2: Tanh saturation applied to eddy viscosity",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k + f*nut))",
+      "num_coeffs": 6,
+      "reason": "EP2: Tanh saturation of combined turbulence terms",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*tanh(f*k))",
+      "num_coeffs": 6,
+      "reason": "EP2: Higher-order rational radial profile with tanh(k)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k * exp(-e*k))",
+      "num_coeffs": 5,
+      "reason": "EP1: Non-monotonic turbulence effect (peak at specific k)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + e*k))",
+      "num_coeffs": 5,
+      "reason": "EP2: Logarithmic saturation (re-visiting with extra coefficient)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)^(-e)",
+      "num_coeffs": 5,
+      "reason": "EP1: Inverse power law dependency on turbulence",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*erf(e*k))",
+      "num_coeffs": 5,
+      "reason": "EP1: Error function saturation",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*x*k))",
+      "num_coeffs": 5,
+      "reason": "EP2: X-dependent saturation strength",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k/x))",
+      "num_coeffs": 5,
+      "reason": "EP2: Turbulence effect decaying downstream inside tanh",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*tanh(k))",
+      "num_coeffs": 5,
+      "reason": "EP2: Linear plus saturating term (Taylor expansion approximation)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sin(e*k))",
+      "num_coeffs": 5,
+      "reason": "EP1: Periodic turbulence modulation (exploratory)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k * (1 - e*r^2))",
+      "num_coeffs": 5,
+      "reason": "EP2: Radial variation of turbulence effect",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) + f*tanh(g*nut))",
+      "num_coeffs": 7,
+      "reason": "EP2: Separate saturating terms for k and nut",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k / (1 + e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP1: Turbulence effect modulated by viscosity",
+      "ep_type": "EP1"
+    }
+  ]
+}

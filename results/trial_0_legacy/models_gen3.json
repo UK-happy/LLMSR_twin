@@ -1,0 +1,145 @@
+{
+  "generation": 3,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "Retaining Gen 2 best model (Polynomial k expansion) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^3)",
+      "num_coeffs": 5,
+      "reason": "EP2: Testing cubic dependence on k (higher order expansion)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*nut^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Combining linear k and quadratic nut (both were good in Gen 2)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*omega)",
+      "num_coeffs": 5,
+      "reason": "EP2: Combining k and omega (dissipation) linearly",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Super-Gaussian radial profile with linear k term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*k + f*k^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Bastankhah profile with quadratic k expansion",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)^2",
+      "num_coeffs": 4,
+      "reason": "EP4: Simplified quadratic k dependence (perfect square)",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * exp(d*k + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Exponential of quadratic k polynomial",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * x^(-b) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP1: Power-law decay (previously weak) boosted by k-term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d) * (1 + e*k + f*nut)",
+      "num_coeffs": 6,
+      "reason": "EP1: Power-law/Bastankhah hybrid with turbulence terms",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "EP1: Higher-order rational radial profile with k-term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k * exp(-e*r^2))",
+      "num_coeffs": 5,
+      "reason": "EP2: Localizing k-effect to the wake center (Gaussian weighting)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k * (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "EP2: Linearly growing k-effect downstream",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sqrt(k*nut))",
+      "num_coeffs": 4,
+      "reason": "EP2: Geometric mean of k and nut",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*abs(r))",
+      "num_coeffs": 5,
+      "reason": "EP2: Linear k term plus linear radial correction",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k) / (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP1: Rational combination of k and nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k))",
+      "num_coeffs": 5,
+      "reason": "EP1: Saturating k-effect using tanh",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * log(1 + d*k + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP1: Logarithmic combined turbulence term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^0.5)",
+      "num_coeffs": 5,
+      "reason": "EP2: Mixed integer and fractional powers of k",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^2 + f*k^3)",
+      "num_coeffs": 6,
+      "reason": "EP2: Third order polynomial expansion in k",
+      "ep_type": "EP2"
+    }
+  ]
+}

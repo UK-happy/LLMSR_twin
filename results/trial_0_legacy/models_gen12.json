@@ -1,0 +1,145 @@
+{
+  "generation": 12,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "Retaining Gen 11 best model (Squared inverse, exp decay, radial modulation) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Checking linear inverse with the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Cubic inverse with the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^4))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Higher-order radial modulation in the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * exp(g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Exponential radial modulation in the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Absolute linear radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x^2) * (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gaussian downstream decay with radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * exp(-f*x) * (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Replacing nut with k in the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) / (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Inverse radial modulation (decaying radially)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*x*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Coupled x-r modulation in the best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + e*nut) * exp(-f*x) * (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Log saturation with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*atan(e*nut) * exp(-f*x) * (1 + g*r^2))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Arctan saturation with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Retaining Gen 11 runner-up (Higher fractional inverse power)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x))^(-2.25)",
+      "num_coeffs": 6,
+      "reason": "EP2: Fine-tuning fractional inverse power",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) + g*r^2)^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Additive radial term in squared denominator (re-visiting)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2 + h*r^4))^(-2)",
+      "num_coeffs": 8,
+      "reason": "EP2: Higher order polynomial radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Fractional power with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2))^(-2.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Higher fractional power with best structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut * (1 + f*r^2)) * exp(-g*x))^(-2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Radial modulation inside tanh",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*r^2 + h*x))^(-2)",
+      "num_coeffs": 8,
+      "reason": "EP2: Adding linear x term to the modulation factor",
+      "ep_type": "EP2"
+    }
+  ]
+}

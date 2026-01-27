@@ -1,0 +1,185 @@
+{
+  "generation": 12,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Re-evaluating Gen 11 ID 4 (New Best) with fresh optimization",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k/x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 11 ID 4 with decaying TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 11 ID 4 with growing TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 11 ID 4 with quadratic TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*sqrt(k))",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 11 ID 4 with sqrt(TKE) term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*nut)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with extra Nut term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*nut/x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with decaying Nut term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * tanh(g*x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with tanh transition",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*cos(h*r))",
+      "num_coeffs": 8,
+      "reason": "EP6: Crossover of Gen 11 ID 4 and Cosine model",
+      "ep_type": "EP6",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*r^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with r^2 correction",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*abs(r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with linear radial term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with linear x correction",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*sqrt(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with sqrt(x) correction",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*log(1+x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with log(1+x) term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*exp(-x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with exponential decay",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*nut*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with nut*k interaction",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with extra Omega term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with x*omega term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*tanh(h*r))",
+      "num_coeffs": 8,
+      "reason": "EP2: Improved Gen 11 ID 4 with tanh radial modulation",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x^(-1))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 11 ID 4 with inverse x term",
+      "ep_type": "EP2",
+      "parent_generation": 11,
+      "parent_id": 4
+    }
+  ]
+}

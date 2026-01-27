@@ -1,0 +1,161 @@
+{
+  "generation": 9,
+  "models": [
+    {
+      "id": 161,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Elitism: Keep best model (Seed 1)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 162,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d * (1 + e*x^2)^(-1))",
+      "num_coeffs": 5,
+      "reason": "EP5: Mutation - Change additive offset to multiplicative term",
+      "ep_type": "EP5",
+      "parent_id": 1
+    },
+    {
+      "id": 163,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * tanh(e*x^2)",
+      "num_coeffs": 5,
+      "reason": "EP5: Mutation - Change offset decay function to tanh",
+      "ep_type": "EP5",
+      "parent_id": 1
+    },
+    {
+      "id": 164,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k*nut)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Add coupled TKE-Viscosity term to offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 165,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*omega)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Add coupled x-Omega term to offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 166,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k^3)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Try cubic TKE dependency",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 167,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^3)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Try cubic Viscosity dependency",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 168,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega^3)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Try cubic Omega dependency",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 169,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x^0.25)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Try small power x dependency",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 170,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k) + e * (1 + f*x^2)^(-1) * (1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover - Seed 1 with TKE and Omega models",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 171,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover - Seed 1 offset with Seed 2 main + Viscosity",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 172,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2)^(-1) * (1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover - Seed 1 offset with Seed 2 radial + Omega",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 173,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x)) + e * (1 + f*x^2)^(-1) * (1 + g*k^2)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover - Seed 1 offset with Seed 4 near wake + TKE squared",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 174,
+      "formula": "a * (1 + b*x)^(-3) * (1 + c*r^2)^(-1) * (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "EP1: Diversity - Cubic decay with linear growth term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 175,
+      "formula": "a * exp(-b*x^0.5) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP1: Diversity - Stretched exponential decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 176,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*abs(r))",
+      "num_coeffs": 3,
+      "reason": "EP1: Diversity - Exponential radial decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 177,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP1: Diversity - Quartic radial decay",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 178,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*x^4))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics - Ensure zero at x=0 for offset (quartic)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 179,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^4)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP4: Simplification - Merge offset into main term (quartic)",
+      "ep_type": "EP4",
+      "parent_id": 1
+    },
+    {
+      "id": 180,
+      "formula": "a * (1 + b*x/c)^(-2) * (1 + d*r^2)^(-1) + e * (1 + f*x^2/g)^(-1) * (1 + h*omega)",
+      "num_coeffs": 8,
+      "reason": "EP7: Dimensional Analysis + Omega",
+      "ep_type": "EP7",
+      "parent_id": 1
+    }
+  ]
+}

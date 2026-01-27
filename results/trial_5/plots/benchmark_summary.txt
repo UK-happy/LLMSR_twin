@@ -1,0 +1,19 @@
+Benchmark Results Summary
+=========================
+Experiment: trial_5
+Generation: 7
+Date: 2025-11-27T15:27:21.241
+
+[Jensen Model]
+MSE: 0.0004770152209187858
+
+[Bastankhah Model]
+MSE: 0.0005884769139811464
+
+[LLM Best Model]
+Formula: a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-2) * (1 + d*sqrt(x))
+MSE: 0.0003821182394644916
+Coeffs: [-99.99999999999325, 17.244250622611357, 1.1820960930595423, -1.620985892600281]
+
+Improvement over Jensen:     19.89%
+Improvement over Bastankhah: 35.07%

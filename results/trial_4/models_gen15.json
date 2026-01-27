@@ -1,0 +1,185 @@
+{
+  "generation": 15,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen14-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^4)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with quartic x correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*sqrt(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with sqrt x correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*log(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with log x correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*exp(-x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with exp decay correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*tanh(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with tanh correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*sin(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with sin correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*cos(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with cos correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*abs(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with abs correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.4)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.6)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^0.7)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen14-ID1 with small power correction",
+      "ep_type": "EP2",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen14-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 14,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen14-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 14,
+      "parent_id": 1
+    }
+  ]
+}

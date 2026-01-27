@@ -1,0 +1,159 @@
+{
+  "generation": 9,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen8-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + linear omega",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + linear TKE",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x^c)^(-2) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: Generalized x power base",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-c) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: Generalized x decay power",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^d)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: Generalized r decay power",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + d*r^4 + e*r^6 + f*r^8)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP1: Very high order radial polynomial",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*x*r^2 + e*x^2*r^4)",
+      "num_coeffs": 5,
+      "reason": "EP1: Polynomial x-r coupling",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*x + e*x^2 + f*x^3))",
+      "num_coeffs": 6,
+      "reason": "EP1: Cubic wake width expansion",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*log(1+x)))",
+      "num_coeffs": 4,
+      "reason": "EP1: Logarithmic wake width expansion",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2 / (1 + d*sqrt(x)))",
+      "num_coeffs": 4,
+      "reason": "EP1: Sqrt wake width expansion",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * k^b * x^(-c) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: TKE power law with rational r",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * nut^b * x^(-c) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: Nut power law with rational r",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * omega^b * x^(-c) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP1: Omega power law with rational r",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x^2*omega)",
+      "num_coeffs": 5,
+      "reason": "EP1: Gen8-ID11 refinement",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*r^2*omega)",
+      "num_coeffs": 5,
+      "reason": "EP1: Gen8-ID12 refinement",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 8,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 8,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen8-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 8,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen8-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 8,
+      "parent_id": 1
+    }
+  ]
+}

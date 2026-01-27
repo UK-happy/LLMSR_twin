@@ -1,0 +1,145 @@
+{
+  "generation": 6,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "Retaining Gen 5 best model (Radial modulation of saturating viscosity) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^4))",
+      "num_coeffs": 6,
+      "reason": "EP2: Modulating viscosity effect with higher-order radial term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Exponential radial modulation of viscosity effect",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut * (1 + f*r^2)))",
+      "num_coeffs": 6,
+      "reason": "EP2: Radial modulation inside the tanh argument",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Applying radial modulation to saturating k term (checking if k behaves like nut)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) + f*r^2 * tanh(g*nut))",
+      "num_coeffs": 7,
+      "reason": "EP2: Separating constant and radially-varying viscosity effects",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut/x))",
+      "num_coeffs": 5,
+      "reason": "EP3: Enforcing downstream decay of viscosity effect (Gen 5 runner-up)",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut/x) * (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Combining downstream decay and radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut^2) * (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Quadratic nut saturation with radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*abs(r)))",
+      "num_coeffs": 6,
+      "reason": "EP2: Linear absolute radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k + f*nut) * (1 + g*r^2))",
+      "num_coeffs": 7,
+      "reason": "EP2: Radial modulation of combined k and nut saturation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) / (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Inverse radial modulation (viscosity effect decreases outwards)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2 + g*r^4))",
+      "num_coeffs": 7,
+      "reason": "EP2: Higher order polynomial radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * cos(f*r))",
+      "num_coeffs": 6,
+      "reason": "EP1: Cosine modulation of viscosity effect",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*x))",
+      "num_coeffs": 6,
+      "reason": "EP2: Streamwise modulation instead of radial",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*x*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Coupled streamwise-radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Saturating nut plus linear k (checking additivity)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*sqrt(r^2 + x^2)))",
+      "num_coeffs": 6,
+      "reason": "EP3: Modulation by distance from source (spherical-like)",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2)^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Squared radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP1: Inverse dependency on the modulated term",
+      "ep_type": "EP1"
+    }
+  ]
+}

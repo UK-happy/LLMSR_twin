@@ -1,0 +1,33 @@
+Benchmark Results Summary
+=========================
+Generated on: 2025-11-25T17:27:25.949
+
+1. Data Conditions (Strict Match with Evolution)
+------------------------------------------------
+Source:         data/result_I0p3000_C22p0000.csv
+Total Points:   62400
+x/D Range:      2.0250000000000004 to 14.975000000000001
+r/D Range:      -5.975 to 5.975000000000001
+Deficit (Δu):   0.0 to 1.0 (Normalized)
+
+2. Model Performance & Parameters
+---------------------------------
+[Jensen Model]
+MSE:            0.0004775844732737672
+Formula:        A * (0.5 / (0.5 + k*x))^2
+Coefficients:   A=0.3057497926498538, k=0.04888780485329087
+
+[Bastankhah Model]
+MSE:            0.00033019622199696887
+Formula:        (A / sigma^2) * exp(-0.5 * (r / sigma)^2)  where sigma = k*x + epsilon
+Coefficients:   A=0.06928950406822608, k=0.028604068346456735, epsilon=0.49012151034615054
+
+[LLM Best Model (Gen 20)]
+MSE:            8.218365264839076e-5
+Formula:        a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2) + g
+Coefficients:   a=9.501605440390005, b=0.15318356806278505, c=1.0278505540097198, d=79.25931111761383, e=8.36405615202491, f=0.08175389888228311, g=-0.018381061011290646
+
+3. Comparative Analysis
+-----------------------
+Improvement over Jensen:     82.79%
+Improvement over Bastankhah: 75.11%

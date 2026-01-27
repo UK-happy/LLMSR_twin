@@ -1,0 +1,33 @@
+{
+    "meta": {
+        "optimization_time": 60,
+        "seed": 42,
+        "data_path": "data/result_I0p3000_C22p0000.csv",
+        "timestamp": "2025-12-02T09:32:40.814",
+        "data_hash": "b678177bd4640d5b07d93f196bee0a7ecf427712dd976ef0b2d7ffc0712cff3c"
+    },
+    "jensen": {
+        "mse": 0.0004764188652159577,
+        "param_names": [
+            "A",
+            "k"
+        ],
+        "params": [
+            0.2961734634616731,
+            0.04761976042995476
+        ]
+    },
+    "bastankhah": {
+        "mse": 0.0002894232949158173,
+        "param_names": [
+            "A",
+            "k",
+            "epsilon"
+        ],
+        "params": [
+            0.051763210517843446,
+            0.021470879736727663,
+            0.44519989940810123
+        ]
+    }
+}

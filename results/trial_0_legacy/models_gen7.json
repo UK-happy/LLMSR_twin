@@ -1,0 +1,145 @@
+{
+  "generation": 7,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "Retaining Gen 6 best model (Inverse radial modulation) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*abs(r)))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Inverse form with absolute radial modulation (2nd best in Gen 6 was linear abs)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^4))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Inverse form with higher-order radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Inverse form with exponential radial modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2)^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Inverse form with squared radial modulation term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Replacing nut with k in the inverse structure",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut/x) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP3: Inverse form with downstream decaying viscosity effect",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*atan(e*nut) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Using arctan instead of tanh in the inverse form",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + e*nut) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Using log saturation in the inverse form",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut + f*k) * (1 + g*r^2))^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Inverse form with combined turbulence terms",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) / (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP1: Inverse of a ratio (effectively multiplicative modulation in denominator)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*tanh(e*nut) * (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Explicit division notation (mathematically same as best model, checking optimizer stability)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*x))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Inverse form with streamwise modulation",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*sqrt(r^2+x^2)))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP3: Inverse form with spherical distance modulation",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut))^(-1) * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Separated inverse terms",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Additive radial term in denominator (instead of multiplicative)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2 + g*r^4))^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Higher order radial polynomial in denominator",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*tanh(e*nut) * (1 + f*r^2))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Super-Gaussian base profile with best inverse modification",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*tanh(f*nut) * (1 + g*r^2))^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP2: Bastankhah base profile with best inverse modification",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut * (1 + f*r^2)))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Radial modulation inside tanh, in denominator",
+      "ep_type": "EP2"
+    }
+  ]
+}

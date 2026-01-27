@@ -1,0 +1,145 @@
+{
+  "generation": 5,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut))",
+      "num_coeffs": 5,
+      "reason": "Retaining Gen 4 best model (tanh nut saturation) for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut^2))",
+      "num_coeffs": 5,
+      "reason": "EP2: Tanh saturation with quadratic eddy viscosity",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "EP2: Tanh saturation with square root of eddy viscosity",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) * tanh(f*nut))",
+      "num_coeffs": 6,
+      "reason": "EP2: Product of saturating k and nut terms",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k + f*nut))",
+      "num_coeffs": 6,
+      "reason": "EP2: Tanh of linear combination (2nd best in Gen 4)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*tanh(f*nut))",
+      "num_coeffs": 6,
+      "reason": "EP2: Higher-order rational radial profile with tanh(nut)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*nut / (1 + e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP2: Rational saturation (Michaelis-Menten) for nut",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*atan(e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP2: Arctan saturation for nut",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k*nut))",
+      "num_coeffs": 5,
+      "reason": "EP2: Tanh saturation of product k*nut",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k/x))",
+      "num_coeffs": 5,
+      "reason": "EP2: Downstream decaying turbulence effect (k/x)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut/x))",
+      "num_coeffs": 5,
+      "reason": "EP2: Downstream decaying viscosity effect (nut/x)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) + f*nut)",
+      "num_coeffs": 6,
+      "reason": "EP2: Saturating k term plus linear nut term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*tanh(f*nut))",
+      "num_coeffs": 6,
+      "reason": "EP2: Linear k term plus saturating nut term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^4) * (1 + d*tanh(e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP2: Super-Gaussian radial profile with tanh(nut)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*erf(e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP1: Error function saturation for nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + e*nut))",
+      "num_coeffs": 5,
+      "reason": "EP1: Logarithmic dependence on nut",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k) + f*tanh(g*k))",
+      "num_coeffs": 7,
+      "reason": "EP2: Double tanh terms with different scales for k",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * (1 + f*r^2))",
+      "num_coeffs": 6,
+      "reason": "EP2: Radial modulation of saturating viscosity effect",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*k + f*nut + g*omega))",
+      "num_coeffs": 7,
+      "reason": "EP2: Tanh of linear combination of all three turbulence variables",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k / (1 + e*nut + f*k))",
+      "num_coeffs": 6,
+      "reason": "EP1: Complex rational saturation involving k and nut",
+      "ep_type": "EP1"
+    }
+  ]
+}

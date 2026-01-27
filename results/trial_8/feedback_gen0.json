@@ -1,0 +1,7 @@
+{
+    "instructions": "Generate 20 initial models for Wind Turbine Wake Deficit ΔU(x, r).\n\nVariables: x, r, k, omega, nut\nFormat: Julia scalar expression (e.g., a * exp(-b*x) * (1 + c*r^2)^(-d))\n\nConstraints (Phase 6):\n- P1: Decay in x (monotonic)\n- P2: Symmetry in r\n- P3: Physical range (0 <= ΔU <= 1.2)\n- P4: Nut consistency\n\n\n",
+    "generation": 0,
+    "request": "initial_population",
+    "timestamp": "2025-12-01T21:05:07.268",
+    "population_size": 20
+}

@@ -1,0 +1,165 @@
+{
+  "generation": 15,
+  "models": [
+    {
+      "id": 281,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Elitism: Keep best model (Seed 1)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 282,
+      "formula": "a * (1 + b*x)^(-2.001) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP2: Fine-tuning - Femto-adjust axial decay power",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 283,
+      "formula": "a * (1 + b*x)^(-1.999) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP2: Fine-tuning - Femto-adjust axial decay power",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 284,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1.001) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP2: Fine-tuning - Femto-adjust radial decay power",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 285,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-0.999) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP2: Fine-tuning - Femto-adjust radial decay power",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 286,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1.001)",
+      "num_coeffs": 5,
+      "reason": "EP2: Fine-tuning - Femto-adjust offset decay power",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 287,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-0.999)",
+      "num_coeffs": 5,
+      "reason": "EP2: Fine-tuning - Femto-adjust offset decay power",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 288,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k^5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Add quintic TKE term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 289,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Add quintic Viscosity term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 290,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega^5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Local Improvement - Add quintic Omega term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 291,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k^5) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + TKE^5 correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 292,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut^5) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + Viscosity^5 correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 293,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*omega^5) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + Omega^5 correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 294,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*k^5)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-k^5 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 295,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*nut^5)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-nut^5 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 296,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*omega^5)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-omega^5 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 297,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x)) + e * (1 + f*x^2)^(-1) * (1 + g*k^4)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover - Seed 1 with Seed 4 near wake + TKE^4",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 298,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^4)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover - Seed 1 offset with Seed 2 main + Viscosity^4",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 299,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*x^10))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics - Ensure zero at x=0 for offset (decic)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 300,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^10)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP4: Simplification - Merge offset into main term (decic)",
+      "ep_type": "EP4",
+      "parent_id": 1
+    }
+  ]
+}

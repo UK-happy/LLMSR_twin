@@ -1,0 +1,177 @@
+{
+  "generation": 5,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with cubic x correction",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^1.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Gen4-ID1 with non-integer power correction",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4 + e*r^6)^(-1) * (1 + f*x + g*x^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with higher order r",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2.2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Gen4-ID1 with adjusted decay power",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x^0.4)^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Gen4-ID1 with adjusted x base power",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * exp(e*x + f*x^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Gen4-ID1 with exp correction",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with TKE",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*nut)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with Nut",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with Omega",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*r^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with coupled r correction",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*r^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with coupled x-r",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*sqrt(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen4-ID1 with mixed x powers",
+      "ep_type": "EP2",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*sin(x))",
+      "num_coeffs": 4,
+      "reason": "EP1: Sine x modulation",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*tanh(r))",
+      "num_coeffs": 4,
+      "reason": "EP1: Tanh r",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d) * (1 + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "EP1: Power law + k^2",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut^2)",
+      "num_coeffs": 4,
+      "reason": "EP1: Nut^2",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Classic Jensen check",
+      "ep_type": "EP3",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Simpler model check",
+      "ep_type": "EP3",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1) * (1 + d*x + e*x^2)",
+      "num_coeffs": 5,
+      "reason": "EP4: Simplified Gen4-ID1 (remove r^2)",
+      "ep_type": "EP4",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x)",
+      "num_coeffs": 5,
+      "reason": "EP4: Simplified Gen4-ID1 (remove x^2)",
+      "ep_type": "EP4",
+      "parent_generation": 4,
+      "parent_id": 1
+    }
+  ]
+}

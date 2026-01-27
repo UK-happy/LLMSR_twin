@@ -1,0 +1,185 @@
+{
+  "generation": 14,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen13-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*omega^0.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + sqrt omega coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*k^0.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + sqrt TKE coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*nut^0.5)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + sqrt Nut coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*log(omega))",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + log omega coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * exp(g*x*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + exp omega coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * tanh(g*x*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + tanh omega coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*omega^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + quadratic omega coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*k^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + quadratic TKE coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) * (1 + g*x*nut^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Best structure + quadratic Nut coupling",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.1)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen13-ID13 refinement (tenth root omega)",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 13
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.15)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen13-ID13 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 13
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.25)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen13-ID13 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 13
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.3)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen13-ID13 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 13
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.4)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen13-ID13 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 13
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega^0.5)",
+      "num_coeffs": 4,
+      "reason": "EP2: Gen13-ID13 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 13,
+      "parent_id": 13
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen13-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 13,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen13-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 13,
+      "parent_id": 1
+    }
+  ]
+}

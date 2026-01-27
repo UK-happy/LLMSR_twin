@@ -1,0 +1,145 @@
+{
+  "generation": 10,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion: Product form.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^1.8) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion + Radial power 1.8.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2.2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion + Radial power 2.2.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2.5) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion + Radial power 2.5.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-0.6) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion + Fixed -0.6 power.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-0.7) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Gen 9 Champion + Fixed -0.7 power.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-f) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 6,
+      "reason": "Gen 9 Champion + Free power decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.6)",
+      "num_coeffs": 5,
+      "reason": "Sum form with Nut^0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.4)",
+      "num_coeffs": 5,
+      "reason": "Sum form with Nut^0.4.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k*nut)",
+      "num_coeffs": 5,
+      "reason": "Sum form with interaction term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.55 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "TKE^0.55 + Sqrt(Nut).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.65 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "TKE^0.65 + Sqrt(Nut).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k^0.6)^(-1) * (1 + e*sqrt(nut))^(-1)",
+      "num_coeffs": 5,
+      "reason": "Explicit inverse product form.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k^0.6 + e*sqrt(nut))^(-1)",
+      "num_coeffs": 5,
+      "reason": "Explicit inverse sum form.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(nut) + f*x)",
+      "num_coeffs": 6,
+      "reason": "Sum form + x term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(nut) + f*r^2)",
+      "num_coeffs": 6,
+      "reason": "Sum form + Radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Nested modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(nut) * (1 + e*k^0.6))",
+      "num_coeffs": 5,
+      "reason": "Nested modulation (reversed).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.5 + f*omega^0.5)",
+      "num_coeffs": 6,
+      "reason": "All three turbulence terms.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 - tanh(d*k^0.6 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "Tanh decay with combined turbulence.",
+      "ep_type": "EP2"
+    }
+  ]
+}

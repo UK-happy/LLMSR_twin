@@ -1,0 +1,195 @@
+======================================================================
+Evolution Summary
+======================================================================
+
+Total Generations: 20
+
+----------------------------------------------------------------------
+Generation 1
+----------------------------------------------------------------------
+  Best Score:   0.000742
+  Mean Score:   0.042681
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [1.0317, 3.925]
+  Reason:       Fixed power law -1.
+
+----------------------------------------------------------------------
+Generation 2
+----------------------------------------------------------------------
+  Best Score:   0.000613
+  Mean Score:   1290000002707709696.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.5998, 1.984]
+  Reason:       Retaining high performance model: Fixed power law -1.
+
+----------------------------------------------------------------------
+Generation 3
+----------------------------------------------------------------------
+  Best Score:   0.000499
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1/3) * exp(-b*r^2)
+  Coefficients: [0.2286, 0.6543]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 4
+----------------------------------------------------------------------
+  Best Score:   0.000508
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-2/3) * exp(-b*r^2)
+  Coefficients: [0.5479, 1.1118]
+  Reason:       Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 5
+----------------------------------------------------------------------
+  Best Score:   0.000558
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.6116, 1.1281]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 6
+----------------------------------------------------------------------
+  Best Score:   0.000536
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.8226, 1.6564]
+  Reason:       Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 7
+----------------------------------------------------------------------
+  Best Score:   0.000519
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7281, 1.6949]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 8
+----------------------------------------------------------------------
+  Best Score:   0.000520
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7556, 1.6259]
+  Reason:       Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 9
+----------------------------------------------------------------------
+  Best Score:   0.000532
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7987, 2.1889]
+  Reason:       Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 10
+----------------------------------------------------------------------
+  Best Score:   0.000520
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7562, 1.6092]
+  Reason:       Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 11
+----------------------------------------------------------------------
+  Best Score:   0.000534
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.6602, 1.697]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 12
+----------------------------------------------------------------------
+  Best Score:   0.000535
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.6666, 1.2756]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 13
+----------------------------------------------------------------------
+  Best Score:   0.000529
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7797, 1.5228]
+  Reason:       Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 14
+----------------------------------------------------------------------
+  Best Score:   0.000534
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.6454, 1.4219]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 15
+----------------------------------------------------------------------
+  Best Score:   0.000519
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7264, 1.5853]
+  Reason:       Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 16
+----------------------------------------------------------------------
+  Best Score:   0.000531
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.8212, 1.766]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 17
+----------------------------------------------------------------------
+  Best Score:   0.000526
+  Mean Score:   2263157899487209984.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.8075, 1.8591]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 18
+----------------------------------------------------------------------
+  Best Score:   0.000522
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7846, 1.9073]
+  Reason:       Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 19
+----------------------------------------------------------------------
+  Best Score:   0.000547
+  Mean Score:   2150000004512849408.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.7543, 2.4113]
+  Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+----------------------------------------------------------------------
+Generation 20
+----------------------------------------------------------------------
+  Best Score:   0.000549
+  Mean Score:   2388888893903165952.000000
+  Best Model:   a * x^(-1) * exp(-b*r^2)
+  Coefficients: [0.8508, 2.4591]
+  Reason:       Retaining high performance model: Retaining high performance model: Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+======================================================================
+🏆 Overall Best Model (Found in Generation 3)
+======================================================================
+Score:        0.000499
+Formula:      a * x^(-1/3) * exp(-b*r^2)
+Coefficients: [0.2286, 0.6543]
+Reason:       Adjusted exponents (x/terms) to fine-tune decay. P1/P3 optimization.
+
+Improvement:  32.75%

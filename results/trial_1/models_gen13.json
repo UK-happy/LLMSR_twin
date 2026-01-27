@@ -1,0 +1,145 @@
+{
+  "generation": 13,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Gen 12 Champion: -0.65 power + TKE^0.6 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.5)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + TKE^1.5.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + TKE^2.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^3)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + TKE^3.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*exp(k))",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + Exp(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*exp(-k))",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + Exp(-TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + Sqrt(Nut).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / ((1 + d*k^0.6) * (1 + e*sqrt(nut)))",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + Product form.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-0.64) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "-0.64 power + TKE^0.6 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-0.66) * exp(-c*r^2) / (1 + d*k^0.6 + e*k)",
+      "num_coeffs": 5,
+      "reason": "-0.66 power + TKE^0.6 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) * (1 - d*k)",
+      "num_coeffs": 4,
+      "reason": "-0.65 power + Linear TKE decay.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) * (1 - d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "-0.65 power + TKE^0.6 decay.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.55 + e*k)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.55 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.65 + e*k)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.65 + TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^0.5)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + Nut^0.5.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut^2)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + Nut^2.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*x*k)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + x*k.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*r*k)",
+      "num_coeffs": 5,
+      "reason": "-0.65 power + TKE^0.6 + r*k.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^2 + f*nut)",
+      "num_coeffs": 6,
+      "reason": "-0.65 power + TKE^0.6 + TKE^2 + Nut.",
+      "ep_type": "EP2"
+    }
+  ]
+}

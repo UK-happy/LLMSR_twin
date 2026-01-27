@@ -1,0 +1,185 @@
+{
+  "generation": 3,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k) + d",
+      "num_coeffs": 5,
+      "reason": "Added linear TKE dependence to offset model",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-e*x)) + d",
+      "num_coeffs": 5,
+      "reason": "Added near-wake correction to offset model",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-e) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 5,
+      "reason": "Generalized x-decay power with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-e) + d",
+      "num_coeffs": 5,
+      "reason": "Generalized r-decay power with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Gaussian radial profile with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*sqrt(k)) + d",
+      "num_coeffs": 5,
+      "reason": "Sqrt(k) dependence with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*nut) + d",
+      "num_coeffs": 5,
+      "reason": "Eddy viscosity dependence with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Exponential x-decay with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + e*r^4)^(-1) + d",
+      "num_coeffs": 5,
+      "reason": "Higher order radial polynomial with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k^2) + d",
+      "num_coeffs": 5,
+      "reason": "Quadratic TKE dependence with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 11,
+      "formula": "a * x^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Simplified x-decay with offset",
+      "ep_type": "EP4",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Fixed x-scale with offset",
+      "ep_type": "EP4",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r))^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Abs(r) symmetry with offset",
+      "ep_type": "EP3",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Quartic radial decay with offset",
+      "ep_type": "EP3",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-e*x^2)) + d",
+      "num_coeffs": 5,
+      "reason": "Smoother near-wake with offset",
+      "ep_type": "EP3",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k) + d",
+      "num_coeffs": 5,
+      "reason": "Re-check TKE with offset (Duplicate of ID 1 but EP3 context)",
+      "ep_type": "EP3",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 17,
+      "formula": "a * tanh(b*x) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Tanh growth function",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * log(1 + x)^(-b) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Logarithmic decay",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*k)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Combined denominator term",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x + c*x^2)^(-1) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Quadratic rational decay",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    }
+  ]
+}

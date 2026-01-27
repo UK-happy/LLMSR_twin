@@ -1,0 +1,185 @@
+{
+  "generation": 10,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^3)",
+      "num_coeffs": 7,
+      "reason": "EP2: Keep refining the best model (Gen9-ID1)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*x^4)",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen9-ID1 with quartic x correction",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2 + g*sqrt(k))",
+      "num_coeffs": 7,
+      "reason": "EP2: Gen9-ID1 with sqrt(k)",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x^2*omega)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 refinement",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x^3*omega)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with cubic coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*sqrt(omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with sqrt coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*log(omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with log coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*exp(-omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with exp coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*tanh(omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with tanh coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*sin(omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with sin coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*cos(omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with cos coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*abs(omega))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with abs coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*omega^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with quadratic coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*omega^3)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with cubic coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*omega^0.5)",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with fractional coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega + e*x*omega^(-1))",
+      "num_coeffs": 5,
+      "reason": "EP2: Gen9-ID15 with inverse coupling",
+      "ep_type": "EP2",
+      "parent_generation": 9,
+      "parent_id": 15
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen9-ID1",
+      "ep_type": "EP4",
+      "parent_generation": 9,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplified Gen9-ID1 variant",
+      "ep_type": "EP4",
+      "parent_generation": 9,
+      "parent_id": 1
+    }
+  ]
+}

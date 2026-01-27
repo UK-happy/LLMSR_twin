@@ -1,0 +1,145 @@
+{
+  "generation": 20,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2)",
+      "num_coeffs": 6,
+      "reason": "Gen 19 Best: Fixed decay 0.1, Power -1.2",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.25)",
+      "num_coeffs": 6,
+      "reason": "Gen 17 Best: Fixed decay 0.1, Power -1.25",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.25)",
+      "num_coeffs": 7,
+      "reason": "Gen 16 Best: Free decay, Power -1.25",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-f*x) * (1 + g*abs(r)))^(-1.5)",
+      "num_coeffs": 7,
+      "reason": "Gen 13 Best: Free decay, Power -1.5",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.25) * (1 + 0.1*k)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Gen 19 Runner-up: Fixed decay 0.1, Power -1.25, Fixed k-term 0.1",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2) * (1 + 0.1*k)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Hybrid: Best Power -1.2 + Best k-term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*r^2))^(-1.2)",
+      "num_coeffs": 6,
+      "reason": "Variation: Squared radial modulation (smoother) with Power -1.2",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*sqrt(r^2+0.01)))^(-1.2)",
+      "num_coeffs": 6,
+      "reason": "Variation: Smoothed abs radial modulation with Power -1.2",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.15)",
+      "num_coeffs": 6,
+      "reason": "Fine-tuning: Power -1.15",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.22)",
+      "num_coeffs": 6,
+      "reason": "Fine-tuning: Power -1.22",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.05*x) * (1 + f*abs(r)))^(-1.2)",
+      "num_coeffs": 6,
+      "reason": "Fine-tuning: Slower decay 0.05",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.15*x) * (1 + f*abs(r)))^(-1.2)",
+      "num_coeffs": 6,
+      "reason": "Fine-tuning: Faster decay 0.15",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + 0.5 * tanh(d*nut) * exp(-0.1*x) * (1 + e*abs(r)))^(-1.2)",
+      "num_coeffs": 5,
+      "reason": "Simplification: Fixed outer tanh 0.5 with Power -1.2",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + 0.5*abs(r)))^(-1.2)",
+      "num_coeffs": 5,
+      "reason": "Simplification: Fixed radial 0.5 with Power -1.2",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1)",
+      "num_coeffs": 6,
+      "reason": "Comparison: Integer Power -1",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-2)",
+      "num_coeffs": 6,
+      "reason": "Comparison: Integer Power -2",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-x) * (1 + f*abs(r)))^(-1.2)",
+      "num_coeffs": 6,
+      "reason": "Comparison: Decay rate 1.0",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2) * (1 + g*x)^(-1)",
+      "num_coeffs": 7,
+      "reason": "Complex: Adding global decay to best model",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2) * (1 + g*nut)^(-1)",
+      "num_coeffs": 7,
+      "reason": "Complex: Adding turbulence decay to best model",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*tanh(e*nut) * exp(-0.1*x) * (1 + f*abs(r)))^(-1.2) + g",
+      "num_coeffs": 7,
+      "reason": "Complex: Adding offset to best model",
+      "ep_type": "EP2"
+    }
+  ]
+}

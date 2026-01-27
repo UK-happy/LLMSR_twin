@@ -1,0 +1,145 @@
+{
+  "generation": 8,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "Gen 7 Champion: Inverse TKE power 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.55)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.55.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.58)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.58.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.62)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.62.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.65)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.65.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k)^(-0.6)",
+      "num_coeffs": 4,
+      "reason": "Generalized inverse power form (power outside).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k)^(-0.55)",
+      "num_coeffs": 4,
+      "reason": "Generalized inverse power form 0.55.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "TKE power 0.6 + Eddy Viscosity.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*sqrt(nut))",
+      "num_coeffs": 5,
+      "reason": "TKE power 0.6 + Sqrt(Eddy Viscosity).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-0.62) * exp(-c*r^2) / (1 + d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "Fixed -0.62 power + TKE power 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "Fixed -0.65 power + TKE power 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 * (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "Distance-enhanced TKE power 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "TKE power 0.6 + Radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*abs(r))",
+      "num_coeffs": 5,
+      "reason": "TKE power 0.6 + Linear radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * exp(-d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "Exponential TKE power 0.6 decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*omega)",
+      "num_coeffs": 5,
+      "reason": "TKE power 0.6 + Omega.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 * (1 + e*nut))",
+      "num_coeffs": 5,
+      "reason": "TKE power 0.6 modulated by Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 + e*k^1.2)",
+      "num_coeffs": 5,
+      "reason": "Polynomial TKE (0.6 and 1.2).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6 * exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Decaying TKE power 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.7)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.7.",
+      "ep_type": "EP2"
+    }
+  ]
+}

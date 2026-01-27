@@ -1,0 +1,185 @@
+{
+  "generation": 17,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e",
+      "num_coeffs": 5,
+      "reason": "EP5: Keep refining the best model (Gen16-ID6)",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with slowly decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * exp(-f*x)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with exp decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with radial decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x + g*r^2)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP5: Best model with 2D decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*sqrt(x))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with sqrt decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*log(1+x))^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with log decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with quadratic decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * k",
+      "num_coeffs": 5,
+      "reason": "EP5: Best model with TKE offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * nut",
+      "num_coeffs": 5,
+      "reason": "EP5: Best model with Nut offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * omega",
+      "num_coeffs": 5,
+      "reason": "EP5: Best model with Omega offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * sqrt(k)",
+      "num_coeffs": 5,
+      "reason": "EP5: Best model with Sqrt(TKE) offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * log(1+k)",
+      "num_coeffs": 5,
+      "reason": "EP5: Best model with Log(TKE) offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * exp(-k)",
+      "num_coeffs": 5,
+      "reason": "EP5: Best model with Exp(-TKE) offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*k)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with Rational TKE offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*nut)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with Rational Nut offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen16-ID6 with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen16-ID6 variant with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 16,
+      "parent_id": 6
+    }
+  ]
+}

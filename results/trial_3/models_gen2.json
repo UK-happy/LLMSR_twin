@@ -1,0 +1,185 @@
+{
+  "generation": 2,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Added linear TKE dependence to best model",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Added constant offset to best model",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-c) * (1 + d*r^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Generalized x-decay power",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Generalized r-decay power",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x))",
+      "num_coeffs": 4,
+      "reason": "Added near-wake correction term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Added sqrt(k) dependence",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Added eddy viscosity dependence",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k) + e",
+      "num_coeffs": 5,
+      "reason": "Combined TKE and offset",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Changed x-decay to exponential",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Changed r-decay to Gaussian",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * x^(-2) * (1 + b*r^2)^(-1)",
+      "num_coeffs": 2,
+      "reason": "Simplified x-decay to pure power law",
+      "ep_type": "EP4",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + x)^(-2) * (1 + b*r^2)^(-1)",
+      "num_coeffs": 2,
+      "reason": "Fixed x-scale parameter",
+      "ep_type": "EP4",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*abs(x))^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Enforced x symmetry (though x>0 usually)",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*abs(r))^(-1)",
+      "num_coeffs": 3,
+      "reason": "Used abs(r) for symmetry check",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x^2))",
+      "num_coeffs": 4,
+      "reason": "Smoother near-wake correction",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Quartic radial decay for physical core flatness",
+      "ep_type": "EP3",
+      "parent_generation": 1,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * tanh(b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Tanh growth behavior",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 - exp(-b*x)) / (1 + c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Growth term divided by polynomial decay",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x^2) * (1 + c*k)",
+      "num_coeffs": 3,
+      "reason": "Gaussian x-decay with TKE",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "General power law decay",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    }
+  ]
+}

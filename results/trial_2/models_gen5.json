@@ -1,0 +1,145 @@
+{
+  "generation": 5,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k) + d*k)",
+      "num_coeffs": 4,
+      "reason": "Adding linear TKE term to the best simplified model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k) + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Adding eddy viscosity to the best simplified model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*k^0.6)",
+      "num_coeffs": 3,
+      "reason": "Adjusting TKE power in the simplified model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * x^(-0.55) * exp(-b*r^2) / (1 + c*sqrt(k))",
+      "num_coeffs": 3,
+      "reason": "Fine-tuning decay rate (-0.55) in the simplified model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * x^(-0.65) * exp(-b*r^2) / (1 + c*sqrt(k))",
+      "num_coeffs": 3,
+      "reason": "Fine-tuning decay rate (-0.65) in the simplified model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k)) * (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "Adding linear x-dependence to the amplitude.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k)) * (1 + d*x^(-1))",
+      "num_coeffs": 4,
+      "reason": "Adding inverse x correction to the amplitude.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k)) * (1 + d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Modifying radial profile with polynomial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / sqrt(1 + c*k)",
+      "num_coeffs": 3,
+      "reason": "Applying square root to the whole denominator.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k) + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Adding omega modulation to the simplified model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k)) * (1 - exp(-d*x))",
+      "num_coeffs": 4,
+      "reason": "Enforcing near-wake zero deficit on the simplified model.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 12,
+      "formula": "a * x^(-0.6) * exp(-b*abs(r)^1.5) / (1 + c*sqrt(k))",
+      "num_coeffs": 3,
+      "reason": "Using super-Gaussian radial profile on the simplified model.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 13,
+      "formula": "a * x^(-0.6) * exp(-b*r^2) / (1 + c*sqrt(k)) * (1 + d*abs(r))^(-1)",
+      "num_coeffs": 4,
+      "reason": "Adding polynomial radial decay tail.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 14,
+      "formula": "a * x^(-0.6) * (1 + b*r^2)^(-c) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Using polynomial radial profile instead of Gaussian.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 15,
+      "formula": "a * x^(-0.6) * exp(-b*r^2)",
+      "num_coeffs": 2,
+      "reason": "Removing TKE term to see if it's essential.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 16,
+      "formula": "x^(-0.6) * exp(-a*r^2) / (1 + b*sqrt(k))",
+      "num_coeffs": 2,
+      "reason": "Removing amplitude coefficient 'a'.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * cos(d*r)^2",
+      "num_coeffs": 4,
+      "reason": "Squared cosine radial profile.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k/nut)",
+      "num_coeffs": 5,
+      "reason": "Modulation by ratio of TKE to eddy viscosity.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-1) * exp(-c*r^2) * (1 + d*k^4)",
+      "num_coeffs": 4,
+      "reason": "Quartic TKE modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*log(1 + k^2))",
+      "num_coeffs": 4,
+      "reason": "Logarithmic dependence on squared TKE.",
+      "ep_type": "EP1"
+    }
+  ]
+}

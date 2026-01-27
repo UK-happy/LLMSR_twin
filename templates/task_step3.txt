@@ -1,0 +1,18 @@
+TASK:
+Based on the provided "Logic Analysis" and "Physics Analysis" below, perform ONLY Step 5 (Score) and Step 6 (Improvements).
+Do NOT repeat the previous analysis.
+
+REQUIRED OUTPUT FORMAT:
+Step 5: Score: <number between 0 and 5>
+Reason: <1-2 sentences explaining the score>
+
+Step 6: Improvements:
+<list of improvements>
+
+---
+Logic Analysis:
+{{step1_result}}
+
+---
+Physics Analysis:
+{{step2_result}}

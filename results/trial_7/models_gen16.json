@@ -1,0 +1,185 @@
+{
+  "generation": 16,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Re-evaluating Gen 15 ID 3 (Robust Best) with fresh optimization",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*k/x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with decaying TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * exp(-d*r) * (1 + e*x*omega) * (1 + f*nut) * (1 + g*k)",
+      "num_coeffs": 7,
+      "reason": "EP6: Hybrid Rational-Exponential profile",
+      "ep_type": "EP6",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*r^2)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with r^2 correction",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*nut/x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with decaying nut term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with linear x correction",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*sqrt(k))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with sqrt(TKE) term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * tanh(g*x)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with tanh transition",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*cos(h*r))",
+      "num_coeffs": 8,
+      "reason": "EP6: Crossover of Gen 15 ID 3 and Cosine model",
+      "ep_type": "EP6",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*nut*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with nut*k interaction",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*abs(r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with linear radial term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*k)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with x*k term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with extra Omega term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x*omega)",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with x*omega term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*exp(-x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with exponential decay",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*log(1+x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with log(1+x) term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*sin(h*r))",
+      "num_coeffs": 8,
+      "reason": "EP2: Improved Gen 15 ID 3 with sine modulation",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*tanh(h*r))",
+      "num_coeffs": 8,
+      "reason": "EP2: Improved Gen 15 ID 3 with tanh radial modulation",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*sqrt(x))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with sqrt(x) correction",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k) * (1 + g*x^(-1))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 15 ID 3 with inverse x term",
+      "ep_type": "EP2",
+      "parent_generation": 15,
+      "parent_id": 3
+    }
+  ]
+}

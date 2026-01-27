@@ -1,0 +1,185 @@
+{
+  "generation": 19,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e",
+      "num_coeffs": 5,
+      "reason": "EP5: Keep refining the best model (Gen18-ID1)",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*k*0.01)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with very slow TKE drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*nut*0.01)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with very slow Nut drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*omega*0.01)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with very slow Omega drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x*k)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with x-TKE drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x*nut)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with x-Nut drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x*omega)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with x-Omega drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*r*k)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with r-TKE drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*r*nut)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with r-Nut drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*r*omega)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with r-Omega drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2*k)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with quadratic x-TKE drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2*nut)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with quadratic x-Nut drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2*omega)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with quadratic x-Omega drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*sqrt(x)*k)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with sqrt x-TKE drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*sqrt(x)*nut)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with sqrt x-Nut drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*sqrt(x)*omega)",
+      "num_coeffs": 6,
+      "reason": "EP5: Best model with sqrt x-Omega drift",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen18-ID1 with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen18-ID1 variant with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    }
+  ]
+}

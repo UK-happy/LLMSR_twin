@@ -1,0 +1,185 @@
+{
+  "generation": 4,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Re-introducing Gen 2 Champion (Elite Strategy)",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2.1) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly increased x-decay power",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-1.9) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly decreased x-decay power",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1.1) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly increased r-decay power",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-0.9) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly decreased r-decay power",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x)",
+      "num_coeffs": 5,
+      "reason": "Decaying offset for physical consistency",
+      "ep_type": "EP3",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Offset with near-wake growth",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d + e*k",
+      "num_coeffs": 5,
+      "reason": "Offset plus linear TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d + e*sqrt(k)",
+      "num_coeffs": 5,
+      "reason": "Offset plus sqrt(k) term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d + e*nut",
+      "num_coeffs": 5,
+      "reason": "Offset plus eddy viscosity term",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Offset scaled by TKE",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*x) + d",
+      "num_coeffs": 5,
+      "reason": "Linear x scaling with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*r^2) + d",
+      "num_coeffs": 5,
+      "reason": "Quadratic r scaling with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * exp(-e*x) + d",
+      "num_coeffs": 5,
+      "reason": "Additional exponential decay with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * exp(-e*r^2) + d",
+      "num_coeffs": 5,
+      "reason": "Additional Gaussian decay with offset",
+      "ep_type": "EP2",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * x",
+      "num_coeffs": 4,
+      "reason": "Linear offset (likely unphysical but testing)",
+      "ep_type": "EP3",
+      "parent_generation": 2,
+      "parent_id": 2
+    },
+    {
+      "id": 17,
+      "formula": "a * sin(b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Sinusoidal x dependence (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + x)^(-b) * (1 + r)^(-c)",
+      "num_coeffs": 3,
+      "reason": "Simple power law in x and r (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-1) * (1 + d*k^2)",
+      "num_coeffs": 4,
+      "reason": "Exponential x, rational r, quadratic TKE (Diversity)",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Original best model without offset (Simplification)",
+      "ep_type": "EP4",
+      "parent_generation": 2,
+      "parent_id": 2
+    }
+  ]
+}

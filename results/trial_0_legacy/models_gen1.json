@@ -1,0 +1,145 @@
+{
+  "generation": 1,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Classic Gaussian wake profile with exponential decay in x",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-b) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Power-law decay in x with Gaussian radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Exponential decay in x with polynomial radial profile (Bastankhah-like)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 4,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "Power-law decay in x with polynomial radial profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modified by linear turbulence kinetic energy term",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modified by square root of turbulence kinetic energy",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modified by eddy viscosity",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 8,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "Gaussian profile modified by specific dissipation rate",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*abs(r)^d)",
+      "num_coeffs": 4,
+      "reason": "Generalized Gaussian radial profile with variable exponent",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * (1 + c*r^2 + d*r^4)^(-1)",
+      "num_coeffs": 4,
+      "reason": "Higher-order polynomial radial decay for shape flexibility",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Combined effect of turbulence kinetic energy and eddy viscosity",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 12,
+      "formula": "a * x^(-b) * (1 + c*r^2)^(-d) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Power-law decay with polynomial radial profile and turbulence effect",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) / (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "Rational decay modification to exponential profile",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^4)",
+      "num_coeffs": 3,
+      "reason": "Super-Gaussian radial profile (flatter top)",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * (1 + c*abs(r))^(-d)",
+      "num_coeffs": 4,
+      "reason": "Polynomial decay with absolute value of radius",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1 + k))",
+      "num_coeffs": 4,
+      "reason": "Logarithmic turbulence dependency",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * cos(c*r) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Cosine modulated Gaussian for potential ring-like structures",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 - exp(-b*x))^(-1) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Inverse recovery function test",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*sqrt(x)) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Stretched exponential decay in x",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k*nut)",
+      "num_coeffs": 4,
+      "reason": "Product of turbulence and viscosity effects",
+      "ep_type": "EP1"
+    }
+  ]
+}

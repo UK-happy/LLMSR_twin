@@ -1,0 +1,185 @@
+{
+  "generation": 16,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) + g",
+      "num_coeffs": 7,
+      "reason": "EP5: Best model (Gen15-ID1) with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) + g * (1 + h*x^2)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP5: Best model with decaying offset (Rational)",
+      "ep_type": "EP5",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) + g * exp(-h*x)",
+      "num_coeffs": 8,
+      "reason": "EP5: Best model with decaying offset (Exp)",
+      "ep_type": "EP5",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) + g * (1 + h*x)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP5: Best model with decaying offset (Inverse Linear)",
+      "ep_type": "EP5",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) * (1 + e*x + f*x^2) + g * (1 + h*r^2)^(-1)",
+      "num_coeffs": 8,
+      "reason": "EP5: Best model with radial offset",
+      "ep_type": "EP5",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e",
+      "num_coeffs": 5,
+      "reason": "EP5: Gen4-ID1 (Simpler base) with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Gen4-ID1 with decaying offset (Rational)",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * exp(-f*x)",
+      "num_coeffs": 6,
+      "reason": "EP5: Gen4-ID1 with decaying offset (Exp)",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Gen4-ID1 with decaying offset (Inverse Linear)",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Gen4-ID1 with radial offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2 + g*r^2)^(-1)",
+      "num_coeffs": 7,
+      "reason": "EP5: Gen4-ID1 with 2D decaying offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * k",
+      "num_coeffs": 5,
+      "reason": "EP5: Gen4-ID1 with TKE offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * nut",
+      "num_coeffs": 5,
+      "reason": "EP5: Gen4-ID1 with Nut offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * omega",
+      "num_coeffs": 5,
+      "reason": "EP5: Gen4-ID1 with Omega offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * sqrt(k)",
+      "num_coeffs": 5,
+      "reason": "EP5: Gen4-ID1 with Sqrt(TKE) offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * log(1+k)",
+      "num_coeffs": 5,
+      "reason": "EP5: Gen4-ID1 with Log(TKE) offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 15,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen4-ID1 with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen4-ID1 variant with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 4,
+      "parent_id": 1
+    }
+  ]
+}

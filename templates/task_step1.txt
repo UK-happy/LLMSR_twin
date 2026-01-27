@@ -1,0 +1,16 @@
+MODEL_NAME: {{model_name}}
+
+REASON:
+{{reason}}
+
+CLAIM:
+{{claim}}
+
+DATA_CONDITIONS:
+{{data}}
+
+---
+
+TASK:
+Perform ONLY Step 1 (Summary) and Step 2 (Logical structure) of the evaluation process.
+Do not output other steps yet.

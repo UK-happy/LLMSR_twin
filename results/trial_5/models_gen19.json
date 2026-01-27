@@ -1,0 +1,185 @@
+{
+  "generation": 19,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e",
+      "num_coeffs": 5,
+      "reason": "Best model from Gen 18 (ID 1). Preserved.",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e*x",
+      "num_coeffs": 5,
+      "reason": "EP5: Add linear x offset (retry).",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e*r^2",
+      "num_coeffs": 5,
+      "reason": "EP5: Add radial offset (retry).",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e*k",
+      "num_coeffs": 5,
+      "reason": "EP5: Add TKE offset (retry).",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e*sqrt(x)",
+      "num_coeffs": 5,
+      "reason": "EP5: Add sqrt(x) offset (retry).",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * exp(-f*x)",
+      "num_coeffs": 6,
+      "reason": "EP5: Add decaying offset (retry).",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * (1 - exp(-f*x))",
+      "num_coeffs": 6,
+      "reason": "EP5: Add asymptotic growth offset (retry).",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-1.92) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e",
+      "num_coeffs": 5,
+      "reason": "EP2: Tuned exponent with offset.",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-1.88) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e",
+      "num_coeffs": 5,
+      "reason": "EP2: Tuned exponent with offset.",
+      "ep_type": "EP2",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e*nut",
+      "num_coeffs": 5,
+      "reason": "EP5: Add eddy viscosity offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e*omega",
+      "num_coeffs": 5,
+      "reason": "EP5: Add omega offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "0.5 * (a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e) + 0.5 * (f * (1 + g*x)^(-1) * (1 + h*r^2)^(-1))",
+      "num_coeffs": 8,
+      "reason": "EP9: Ensemble with Gen 18 2nd best.",
+      "ep_type": "EP9",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * r^4",
+      "num_coeffs": 5,
+      "reason": "EP5: Add higher order radial offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e",
+      "num_coeffs": 5,
+      "reason": "Physics check.",
+      "ep_type": "EP3",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e",
+      "num_coeffs": 5,
+      "reason": "Physics check.",
+      "ep_type": "EP3",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * abs(r)",
+      "num_coeffs": 5,
+      "reason": "EP5: Add abs(r) offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * x^2",
+      "num_coeffs": 5,
+      "reason": "EP5: Add quadratic x offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * (1 + f*x)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Add inverse x offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e * (1 + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP5: Add inverse radial offset.",
+      "ep_type": "EP5",
+      "parent_generation": 18,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-1.9) * (1 + c*r^2)^(-1) * (1 + d*sqrt(x)) + e",
+      "num_coeffs": 5,
+      "reason": "Boundary check.",
+      "ep_type": "EP8",
+      "parent_generation": 18,
+      "parent_id": 1
+    }
+  ]
+}

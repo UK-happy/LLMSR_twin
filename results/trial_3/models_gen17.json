@@ -1,0 +1,185 @@
+{
+  "generation": 17,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 1 (Maximize chance of good optimization)",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 2",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 3",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 4",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Clone 5",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2.01) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Micro-tuning x-decay",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-1.99) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Micro-tuning x-decay",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1.01) + d",
+      "num_coeffs": 4,
+      "reason": "Micro-tuning r-decay",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-0.99) + d",
+      "num_coeffs": 4,
+      "reason": "Micro-tuning r-decay",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2.05) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly larger x-decay adjustment",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-1.95) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly larger x-decay adjustment",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1.05) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly larger r-decay adjustment",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-0.95) + d",
+      "num_coeffs": 4,
+      "reason": "Slightly larger r-decay adjustment",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.000001)",
+      "num_coeffs": 5,
+      "reason": "Physics offset (Clone 1)",
+      "ep_type": "EP3",
+      "parent_generation": 16,
+      "parent_id": 12
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.000001)",
+      "num_coeffs": 5,
+      "reason": "Physics offset (Clone 2)",
+      "ep_type": "EP3",
+      "parent_generation": 16,
+      "parent_id": 12
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.000001)",
+      "num_coeffs": 5,
+      "reason": "Physics offset (Clone 1)",
+      "ep_type": "EP3",
+      "parent_generation": 16,
+      "parent_id": 13
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.000001)",
+      "num_coeffs": 5,
+      "reason": "Physics offset (Clone 2)",
+      "ep_type": "EP3",
+      "parent_generation": 16,
+      "parent_id": 13
+    },
+    {
+      "id": 18,
+      "formula": "a * x^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Simplification (Clone 1)",
+      "ep_type": "EP4",
+      "parent_generation": 16,
+      "parent_id": 18
+    },
+    {
+      "id": 19,
+      "formula": "a * x^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Simplification (Clone 2)",
+      "ep_type": "EP4",
+      "parent_generation": 16,
+      "parent_id": 18
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Gaussian radial (Alternative)",
+      "ep_type": "EP2",
+      "parent_generation": 16,
+      "parent_id": 20
+    }
+  ]
+}

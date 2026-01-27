@@ -1,0 +1,145 @@
+{
+  "generation": 16,
+  "models": [
+    {
+      "id": 1,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x)) * (1 + c*sqrt(k))",
+      "num_coeffs": 3,
+      "reason": "Adding sqrt TKE term to the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x)) * (1 + c*nut)",
+      "num_coeffs": 3,
+      "reason": "Adding eddy viscosity to the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.945) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Fine-tuning TKE power (0.945) in the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.955) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Fine-tuning TKE power (0.955) in the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "x^(-0.593) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Fine-tuning decay rate (-0.593) in the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "x^(-0.597) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Fine-tuning decay rate (-0.597) in the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x)) * (1 + c*x)",
+      "num_coeffs": 3,
+      "reason": "Adding linear x-dependence to the amplitude.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x)) * (1 + c*x^(-1))",
+      "num_coeffs": 3,
+      "reason": "Adding inverse x correction to the amplitude.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x)) * (1 + c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Modifying radial profile with polynomial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95 + c*omega) * (1 - exp(-x))",
+      "num_coeffs": 3,
+      "reason": "Adding omega modulation to the best model.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-c*x))",
+      "num_coeffs": 3,
+      "reason": "Re-optimizing near-wake decay rate 'c'.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 12,
+      "formula": "x^(-0.595) * exp(-a*abs(r)^1.65) / (1 + b*k^0.95) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Using super-Gaussian (1.65) radial profile on the best model.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 13,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95) * (1 - exp(-x)) * (1 + c*abs(r))^(-1)",
+      "num_coeffs": 3,
+      "reason": "Adding polynomial radial decay tail.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 14,
+      "formula": "x^(-0.595) * (1 + a*r^2)^(-b) / (1 + c*k^0.95) * (1 - exp(-x))",
+      "num_coeffs": 3,
+      "reason": "Using polynomial radial profile instead of Gaussian.",
+      "ep_type": "EP3"
+    },
+    {
+      "id": 15,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k^0.95)",
+      "num_coeffs": 2,
+      "reason": "Removing the near-wake term to see if it's essential.",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 16,
+      "formula": "x^(-0.595) * exp(-a*r^2) / (1 + b*k) * (1 - exp(-x))",
+      "num_coeffs": 2,
+      "reason": "Simplifying TKE power to linear (1.0).",
+      "ep_type": "EP4"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k^3 * sin(k))",
+      "num_coeffs": 4,
+      "reason": "Testing cubic oscillatory TKE modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k*log(1+k^2))",
+      "num_coeffs": 5,
+      "reason": "Product of TKE and log(1+k^2) modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-1) * exp(-c*r^2) * (1 + d*k^0.95 * nut)",
+      "num_coeffs": 4,
+      "reason": "Mixed TKE and eddy viscosity modulation.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k / (1 + x^0.1))",
+      "num_coeffs": 4,
+      "reason": "Very weak distance-decaying TKE modulation.",
+      "ep_type": "EP1"
+    }
+  ]
+}

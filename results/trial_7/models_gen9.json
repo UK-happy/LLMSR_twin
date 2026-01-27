@@ -1,0 +1,185 @@
+{
+  "generation": 9,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP2: Re-evaluating Gen 8 ID 4 (New Best) with fresh optimization",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with linear x correction",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*nut/x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with decaying nut term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k/x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with decaying TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*cos(g*r))",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover of Gen 8 ID 4 and Cosine model",
+      "ep_type": "EP6",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with near-wake correction",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * tanh(f*x)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with tanh transition",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*sqrt(x))",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with sqrt(x) correction",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*abs(r))",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with linear radial term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x*nut)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with x*nut term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with x*k term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*omega)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with extra Omega term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*x*omega)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with x*omega term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*exp(-x))",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with exponential decay",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*log(1+x))",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with log(1+x) term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*sin(g*r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 8 ID 4 with sine modulation",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*tanh(g*r))",
+      "num_coeffs": 7,
+      "reason": "EP2: Improved Gen 8 ID 4 with tanh radial modulation",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*r^2)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 4 with r^2 correction",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 4
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-2) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Improved Gen 8 ID 5 (Rational) with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 8,
+      "parent_id": 5
+    }
+  ]
+}

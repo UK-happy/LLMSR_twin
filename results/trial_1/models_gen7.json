@@ -1,0 +1,145 @@
+{
+  "generation": 7,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Gen 5 Champion: Inverse sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.4)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.4.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.6)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.6.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k^0.25)",
+      "num_coeffs": 4,
+      "reason": "Inverse TKE power 0.25.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*tanh(e*k))",
+      "num_coeffs": 5,
+      "reason": "Inverse Tanh(TKE) modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*tanh(e*sqrt(k)))",
+      "num_coeffs": 5,
+      "reason": "Inverse Tanh(sqrt(TKE)) modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 - d*tanh(e*k))",
+      "num_coeffs": 5,
+      "reason": "Linear decay with Tanh(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*log(1 + k))",
+      "num_coeffs": 4,
+      "reason": "Inverse Log(1+TKE) modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*x)",
+      "num_coeffs": 5,
+      "reason": "Inverse sqrt(TKE) + x term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) * (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "Distance-enhanced TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) * exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Decaying TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*nut^0.5)",
+      "num_coeffs": 4,
+      "reason": "Inverse sqrt(Eddy Viscosity).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*omega^0.5)",
+      "num_coeffs": 4,
+      "reason": "Inverse sqrt(Omega).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * exp(-d*k^0.5)",
+      "num_coeffs": 4,
+      "reason": "Exponential sqrt(TKE) decay (Gen 6 #18).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k + e*nut)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Inverse Linear TKE + Nut.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*k*r^2)",
+      "num_coeffs": 4,
+      "reason": "Radial TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "Inverse sqrt(TKE) + Radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) / (1 + d*sqrt(k) + e*abs(r))",
+      "num_coeffs": 5,
+      "reason": "Inverse sqrt(TKE) + Linear radial term.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-0.65) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Fixed -0.65 power (Between -0.6 and -2/3).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-0.62) * exp(-c*r^2) / (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "Fixed -0.62 power.",
+      "ep_type": "EP2"
+    }
+  ]
+}

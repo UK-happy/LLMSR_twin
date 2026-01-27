@@ -1,0 +1,185 @@
+{
+  "generation": 20,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e",
+      "num_coeffs": 5,
+      "reason": "EP5: The Champion (Gen19-ID1)",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x*1e-4)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro linear drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*r^2*1e-4)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro radial drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*k*1e-4)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro TKE drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*nut*1e-4)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro Nut drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*omega*1e-4)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro Omega drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*exp(-x*1e-2))",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro exp drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*tanh(x*1e-2))",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro tanh drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*sin(x*1e-2))",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro sin drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*cos(x*1e-2))",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro cos drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*abs(x)*1e-4)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro abs drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^2*1e-6)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro quadratic drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*sqrt(x)*1e-2)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro sqrt drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*log(1+x)*1e-2)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro log drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^3*1e-8)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro cubic drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2 + d*r^4)^(-1) + e * (1 + f*x^4*1e-10)",
+      "num_coeffs": 6,
+      "reason": "EP5: Champion with micro quartic drift",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP3: Baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "EP3: Gaussian baseline check",
+      "ep_type": "EP3",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen19-ID1 with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*sqrt(x))^(-2) * (1 + c*r^4)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "EP5: Simplified Gen19-ID1 variant with constant offset",
+      "ep_type": "EP5",
+      "parent_generation": 19,
+      "parent_id": 1
+    }
+  ]
+}

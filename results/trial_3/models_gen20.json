@@ -1,0 +1,185 @@
+{
+  "generation": 20,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Final Elite Attempt 1",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Final Elite Attempt 2",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Final Elite Attempt 3",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Final Elite Attempt 4",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Final Elite Attempt 5",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) - d",
+      "num_coeffs": 4,
+      "reason": "Negative Offset Optimization",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 - exp(-e*x))",
+      "num_coeffs": 5,
+      "reason": "Near-wake offset (Final Check)",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "TKE offset (Final Check)",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-1)",
+      "num_coeffs": 5,
+      "reason": "1/x offset (Final Check)",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x)",
+      "num_coeffs": 5,
+      "reason": "Exp offset (Final Check)",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x + f*r^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "Grand Unification: Rational Offset",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k) + d * (1 - exp(-f*x))",
+      "num_coeffs": 6,
+      "reason": "Grand Unification: TKE Main + Near-Wake Offset",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*sqrt(k)) + d * (1 - exp(-f*x))",
+      "num_coeffs": 6,
+      "reason": "Grand Unification: Sqrt(k) Main + Near-Wake Offset",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*nut) + d * (1 - exp(-f*x))",
+      "num_coeffs": 6,
+      "reason": "Grand Unification: Nut Main + Near-Wake Offset",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*omega) + d * (1 - exp(-f*x))",
+      "num_coeffs": 6,
+      "reason": "Grand Unification: Omega Main + Near-Wake Offset",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.000001)",
+      "num_coeffs": 5,
+      "reason": "Physics Offset Final Check",
+      "ep_type": "EP3",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.000001)",
+      "num_coeffs": 5,
+      "reason": "Physics Offset Final Check",
+      "ep_type": "EP3",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * x^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Simplification Final Check",
+      "ep_type": "EP4",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 3,
+      "reason": "Simplification Final Check",
+      "ep_type": "EP4",
+      "parent_generation": 19,
+      "parent_id": 1
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Control: No offset",
+      "ep_type": "EP4",
+      "parent_generation": 19,
+      "parent_id": 1
+    }
+  ]
+}

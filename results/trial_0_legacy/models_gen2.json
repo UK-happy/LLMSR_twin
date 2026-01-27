@@ -1,0 +1,145 @@
+{
+  "generation": 2,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "Retaining the best model from Gen 1 for reference",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Testing quadratic dependence on turbulence kinetic energy",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "EP2: Testing square root dependence on k (re-evaluating)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * exp(d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Testing exponential dependence on k",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP2: Adding eddy viscosity term to the best model",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * exp(-b*x) * (1 + c*r^2)^(-d) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "EP2: Combining best k-term with Bastankhah radial profile",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * exp(-b*sqrt(x)) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Applying stretched exponential decay (2nd best structure) with k-term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 - exp(-b*x))^(-1) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Applying inverse recovery function (3rd best structure) with k-term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k * (1 - exp(-e*x)))",
+      "num_coeffs": 5,
+      "reason": "EP2: Making k-dependency x-dependent (turbulence effect evolves)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k / (1 + e*x))",
+      "num_coeffs": 5,
+      "reason": "EP2: Damping turbulence effect downstream",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*omega)",
+      "num_coeffs": 4,
+      "reason": "EP2: Replacing k with omega (specific dissipation rate)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k*omega)",
+      "num_coeffs": 4,
+      "reason": "EP2: Interaction term of k and omega",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*nut^2)",
+      "num_coeffs": 4,
+      "reason": "EP2: Quadratic eddy viscosity dependence",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 14,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Adding radial dependency to the modification term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 15,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k)^e",
+      "num_coeffs": 5,
+      "reason": "EP2: Power-law dependency on (1+dk)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 16,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*log(1+k))",
+      "num_coeffs": 4,
+      "reason": "EP2: Logarithmic k dependency (re-evaluating)",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 17,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Polynomial expansion in k",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP2: Multiplicative combination of k and nut effects",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k) / (1 + e*x)",
+      "num_coeffs": 5,
+      "reason": "EP2: Global decay modification applied to the whole term",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) * (1 + d*k) * (1 + e*r^2)",
+      "num_coeffs": 5,
+      "reason": "EP2: Coupling k-effect with radial position",
+      "ep_type": "EP2"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "generation": 17,
+  "models": [
+    {
+      "id": 321,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "Elitism: Keep best model (Seed 1)",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 322,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add sqrt TKE term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 323,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add sqrt Viscosity term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 324,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add sqrt Omega term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 325,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*k^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-k^0.5 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 326,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*nut^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-nut^0.5 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 327,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x*omega^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 with coupled x-omega^0.5 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 328,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*k^0.5) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + TKE^0.5 correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 329,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut^0.5) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + Viscosity^0.5 correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 330,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*omega^0.5) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP9: Ensemble - Seed 1 main + Omega^0.5 correction + Seed 1 offset",
+      "ep_type": "EP9",
+      "parent_id": 1
+    },
+    {
+      "id": 331,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*k^1.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add 1.5 power TKE term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 332,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^1.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add 1.5 power Viscosity term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 333,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*omega^1.5)",
+      "num_coeffs": 6,
+      "reason": "EP2: Refinement - Add 1.5 power Omega term to offset",
+      "ep_type": "EP2",
+      "parent_id": 1
+    },
+    {
+      "id": 334,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 - exp(-d*x)) + e * (1 + f*x^2)^(-1) * (1 + g*k^0.5)",
+      "num_coeffs": 7,
+      "reason": "EP6: Crossover - Seed 1 with Seed 4 near wake + TKE^0.5",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 335,
+      "formula": "a * (1 + b*sqrt(x))^(-2.5) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*nut^0.5)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover - Seed 1 offset with Seed 2 main + Viscosity^0.5",
+      "ep_type": "EP6",
+      "parent_id": 1
+    },
+    {
+      "id": 336,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*x^3))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics - Ensure zero at x=0 for offset (cubic)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 337,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 - exp(-f*abs(r)^1.5))",
+      "num_coeffs": 6,
+      "reason": "EP3: Physics - Ensure zero at r=0 for offset (1.5 power)",
+      "ep_type": "EP3",
+      "parent_id": 1
+    },
+    {
+      "id": 338,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x^3)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP4: Simplification - Merge offset into main term (cubic)",
+      "ep_type": "EP4",
+      "parent_id": 1
+    },
+    {
+      "id": 339,
+      "formula": "a * (1 + b*x/c)^(-2) * (1 + d*r^2)^(-1) + e * (1 + f*x^2/g)^(-1) * (1 + h*k)",
+      "num_coeffs": 8,
+      "reason": "EP7: Dimensional Analysis - Explicit length scales + TKE",
+      "ep_type": "EP7",
+      "parent_id": 1
+    },
+    {
+      "id": 340,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x^2)^(-1) * (1 + f*x^1.5)",
+      "num_coeffs": 6,
+      "reason": "EP1: Diversity - Add 1.5 power x term to offset",
+      "ep_type": "EP1",
+      "parent_id": 1
+    }
+  ]
+}

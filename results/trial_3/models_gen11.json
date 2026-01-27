@@ -1,0 +1,185 @@
+{
+  "generation": 11,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Elite: Keeping the best model",
+      "ep_type": "EP2",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 2,
+      "formula": "a * exp(-b*x) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Gaussian wake with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 3,
+      "formula": "a * x^(-b) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Power-law x, Gaussian r with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^4)^(-1) + d",
+      "num_coeffs": 4,
+      "reason": "Rational x, Quartic r with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * cos(c*r * pi/2)^2 + d",
+      "num_coeffs": 4,
+      "reason": "Cosine-squared radial profile with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 - tanh(c*r^2)) + d",
+      "num_coeffs": 4,
+      "reason": "Tanh radial profile with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*k) + d",
+      "num_coeffs": 5,
+      "reason": "TKE-enhanced wake with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*sqrt(k)) + d",
+      "num_coeffs": 5,
+      "reason": "Sqrt(k)-enhanced wake with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + e*nut) + d",
+      "num_coeffs": 5,
+      "reason": "Eddy viscosity-enhanced wake with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 10,
+      "formula": "a * exp(-b*x^2) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Gaussian x-decay with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + x)^(-b) * (1 + r^2)^(-c) + d",
+      "num_coeffs": 4,
+      "reason": "Generalized rational decay with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 - exp(-b*x)) * exp(-c*r^2) + d",
+      "num_coeffs": 4,
+      "reason": "Near-wake growth model with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*abs(r)) + d",
+      "num_coeffs": 4,
+      "reason": "Exponential radial decay (sharp peak) with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2 + e*r^4)^(-1) + d",
+      "num_coeffs": 5,
+      "reason": "Higher-order radial polynomial with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) / (1 + e*x) + d",
+      "num_coeffs": 5,
+      "reason": "Additional x-scaling in denominator with fixed offset",
+      "ep_type": "EP1",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * (1 + e*x)^(-0.001)",
+      "num_coeffs": 5,
+      "reason": "Slowly decaying offset (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) + d * exp(-e*x*0.001)",
+      "num_coeffs": 5,
+      "reason": "Slowly decaying exponential offset (Physics)",
+      "ep_type": "EP3",
+      "parent_generation": 10,
+      "parent_id": 1
+    },
+    {
+      "id": 18,
+      "formula": "a * x^(-2) * exp(-b*r^2) + c",
+      "num_coeffs": 3,
+      "reason": "Simplified power/Gaussian with offset",
+      "ep_type": "EP4",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + x)^(-2) * exp(-b*r^2) + c",
+      "num_coeffs": 3,
+      "reason": "Simplified rational/Gaussian with offset",
+      "ep_type": "EP4",
+      "parent_generation": null,
+      "parent_id": null
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "Control: No offset (to verify necessity)",
+      "ep_type": "EP4",
+      "parent_generation": 10,
+      "parent_id": 1
+    }
+  ]
+}

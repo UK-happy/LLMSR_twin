@@ -1,0 +1,185 @@
+{
+  "generation": 20,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 1",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 2",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 3",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 4",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 5",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 6",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 7",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 8",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 9",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 10",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 11",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 12",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 13",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 14",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 15",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 16",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 17",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 18",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 19",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^4) * (1 + d*x*omega) * (1 + e*nut) * (1 + f*k)",
+      "num_coeffs": 6,
+      "reason": "EP2: Final Massive Exploitation of Gen 13 ID 1 structure - Attempt 20",
+      "ep_type": "EP2",
+      "parent_generation": 19,
+      "parent_id": 6
+    }
+  ]
+}

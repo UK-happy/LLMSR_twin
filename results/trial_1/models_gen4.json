@@ -1,0 +1,145 @@
+{
+  "generation": 4,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Gen 3 Best: Fixed -2/3 power rational decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 2,
+      "formula": "a * (1 + b*x)^(-1) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Gen 3 Runner-up: Fixed -1 power rational decay.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2)",
+      "num_coeffs": 4,
+      "reason": "Free power rational decay (Letting c optimize).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*nut)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Eddy viscosity modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-1) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "-1 power + TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 7,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Free power + TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x)^(-2/3) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + Rational radial profile.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-1) * (1 + c*r^2)^(-d)",
+      "num_coeffs": 4,
+      "reason": "-1 power + Rational radial profile.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 10,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) / (1 + e*nut*x)",
+      "num_coeffs": 5,
+      "reason": "Rational decay + Viscous spreading denominator (Gen 3 #6).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2/3) * exp(-c*r^2) * (1 + d*sqrt(k))",
+      "num_coeffs": 4,
+      "reason": "-2/3 power + sqrt(TKE).",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*nut*r)",
+      "num_coeffs": 5,
+      "reason": "Free power + Radial eddy viscosity.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-0.5) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Fixed -0.5 power (Testing different decay rates).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 14,
+      "formula": "a * (1 + b*x)^(-1.5) * exp(-c*r^2)",
+      "num_coeffs": 3,
+      "reason": "Fixed -1.5 power (Testing faster decay).",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k^2)",
+      "num_coeffs": 5,
+      "reason": "Free power + Quadratic TKE.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*nut^2)",
+      "num_coeffs": 5,
+      "reason": "Free power + Quadratic eddy viscosity.",
+      "ep_type": "EP1"
+    },
+    {
+      "id": 17,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*x*k)",
+      "num_coeffs": 5,
+      "reason": "Free power + Distance-weighted TKE.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) / (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "Free power + Inverse TKE modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) / (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "Free power + Inverse Eddy Viscosity modulation.",
+      "ep_type": "EP2"
+    },
+    {
+      "id": 20,
+      "formula": "a * (1 + b*x)^(-c) * exp(-d*r^2) * (1 + e*k*r)",
+      "num_coeffs": 5,
+      "reason": "Free power + Radial TKE effect.",
+      "ep_type": "EP2"
+    }
+  ]
+}

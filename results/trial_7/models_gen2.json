@@ -1,0 +1,185 @@
+{
+  "generation": 2,
+  "models": [
+    {
+      "id": 1,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*x)",
+      "num_coeffs": 3,
+      "reason": "EP2: Improved ID 11 (Self-similar) with linear x correction",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 2,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*nut)",
+      "num_coeffs": 3,
+      "reason": "EP2: Improved ID 11 with eddy viscosity term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 3,
+      "formula": "a * (1 + b*x*nut)^(-2) * exp(-c*r^2) * (1 + d*x)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 8 (Eddy viscosity) with linear x correction",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 8
+    },
+    {
+      "id": 4,
+      "formula": "a * (1 + b*x*nut)^(-2) * exp(-c*r^2) * (1 + d*r^4)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 8 with super-Gaussian radial profile",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 8
+    },
+    {
+      "id": 5,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*nut)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 14 (Omega) with eddy viscosity term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 14
+    },
+    {
+      "id": 6,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) + e * (1 + f*x^2)^(-1)",
+      "num_coeffs": 6,
+      "reason": "EP6: Crossover of ID 14 (Omega) and Seed 1 (Near-wake correction)",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 14
+    },
+    {
+      "id": 7,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) + c * (1 + d*x^2)^(-1)",
+      "num_coeffs": 4,
+      "reason": "EP6: Crossover of ID 11 (Self-similar) and Seed 1 (Near-wake correction)",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 8,
+      "formula": "a * (1 + b*x*nut)^(-2) * exp(-c*r^2) + d * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP6: Crossover of ID 8 (Eddy viscosity) and Seed 1",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 8
+    },
+    {
+      "id": 9,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*k)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 14 with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 14
+    },
+    {
+      "id": 10,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*sqrt(x))",
+      "num_coeffs": 3,
+      "reason": "EP2: Improved ID 11 with sqrt(x) correction",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 11,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*nut) * (1 + e*omega)",
+      "num_coeffs": 5,
+      "reason": "EP9: Ensemble of Nut (ID 9) and Omega (ID 14) effects",
+      "ep_type": "EP9",
+      "parent_generation": 1,
+      "parent_id": 9
+    },
+    {
+      "id": 12,
+      "formula": "a * (1 + b*x)^(-2) * exp(-c*r^2) * (1 + d*x*nut)",
+      "num_coeffs": 4,
+      "reason": "EP6: Crossover of ID 5 (Gaussian) and ID 8 (Nut)",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 5
+    },
+    {
+      "id": 13,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * exp(-e*x)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 14 with exponential decay",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 14
+    },
+    {
+      "id": 14,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*r^4)",
+      "num_coeffs": 3,
+      "reason": "EP2: Improved ID 11 with super-Gaussian radial term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 15,
+      "formula": "a * (1 + b*x*nut)^(-2) * exp(-c*r^2) * (1 + d*k)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 8 with TKE term",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 8
+    },
+    {
+      "id": 16,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * x^(-0.5)",
+      "num_coeffs": 4,
+      "reason": "EP2: Improved ID 14 with Larsen-like decay",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 14
+    },
+    {
+      "id": 17,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*cos(d*r))",
+      "num_coeffs": 4,
+      "reason": "EP6: Crossover of ID 11 and Cosine model (ID 6)",
+      "ep_type": "EP6",
+      "parent_generation": 1,
+      "parent_id": 11
+    },
+    {
+      "id": 18,
+      "formula": "a * (1 + b*x*nut)^(-2) * (1 + c*r^2)^(-1)",
+      "num_coeffs": 3,
+      "reason": "EP4: Simplification of ID 8 (Gaussian -> Rational radial)",
+      "ep_type": "EP4",
+      "parent_generation": 1,
+      "parent_id": 8
+    },
+    {
+      "id": 19,
+      "formula": "a * (1 + b*x)^(-2) * (1 + c*r^2)^(-1) * (1 + d*x*omega) * (1 + e*x^2)^(-1)",
+      "num_coeffs": 5,
+      "reason": "EP2: Improved ID 14 with near-wake correction",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 14
+    },
+    {
+      "id": 20,
+      "formula": "a * x^(-1) * exp(-b*r^2 / x) * (1 + c*nut/x)",
+      "num_coeffs": 3,
+      "reason": "EP2: Improved ID 11 with decaying eddy viscosity effect",
+      "ep_type": "EP2",
+      "parent_generation": 1,
+      "parent_id": 11
+    }
+  ]
+}
